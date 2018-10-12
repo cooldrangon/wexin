@@ -1,0 +1,55 @@
+.search{
+  width: 65%;
+  margin: auto;
+  display: flex;
+  border-radius: 40rpx;
+  padding: 10rpx;
+  background: #eeeeee;
+  padding-left:20rpx;
+  margin-bottom: 30rpx;
+  height: 50rpx;
+}
+.search input{
+  width: 70%;
+}
+.search text{
+  font-size: 30rpx;
+  width: 70rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.searchlog{
+margin-right: 10rpx
+}
+.place-holder{
+  font-size: 25rpx;
+  color: #bbb;
+  text-align: center;
+}
+.searchcontacts{
+  width: 707rpx;
+  height: 98rpx;
+  margin: auto;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userimg{
+  display: flex;
+  align-items: center;
+}
+.userimg image{
+  width: 98rpx;
+  height: 98rpx;
+  margin-right: 49rpx;
+}
+.application{
+  width: 126rpx;
+  height: 40rpx;
+  font-size: 25rpx;
+  line-height: 40rpx;
+  color: #ffc64a;
+  border:1px solid #ffc64a;
+  text-align: center;
+}

@@ -1,0 +1,228 @@
+.tabj{
+  background-color: #eee;
+  padding-bottom: 100rpx;
+}
+.childer .datu{
+  width:100%;
+  height:900rpx;
+}
+.ta{
+  padding:20rpx;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.ta .name{
+  position: absolute;
+  top:40rpx;
+  left:200rpx;
+}
+.ta .focus {
+  position: absolute;
+  top:40rpx;
+  left:600rpx;
+  border: 1px solid orange;
+  color: orange;
+  border-radius: 10rpx;
+  font-size: 24rpx !important;
+  padding:6rpx 15rpx;
+  margin-top: 10rpx
+}
+.ta .pic{
+  width:120rpx;
+  height:120rpx;
+  border-radius: 100%; 
+
+}
+.ta .describe{
+  font-size: 30rpx;
+  margin-top: 30rpx;
+  white-space: wrap; 
+  overflow: hidden;
+}
+.location,
+.time,
+.comment{
+  font-size: 30rpx;
+  color:#d2d2d2;
+  position: relative
+}
+.location,
+.comment,
+.motivate{
+  margin: 20rpx 0;
+}
+  
+.location image{
+  width:40rpx;
+  height:40rpx;
+  margin-right: 30rpx;
+}
+.time .fre{
+  margin-left: 40%;
+}
+
+.comment::after{
+  width:1rpx;
+  height:2rpx;
+  background-color: #ffc64b;
+}
+.comment .cbj{
+  color:#000;
+  border-left: 6rpx solid #ffc64b;
+  padding-left: 10rpx;
+  margin-right: 58%;
+}
+.motivate {
+  padding-right: 50rpx;
+}
+.xiaotu,
+.motivate image{
+  width:80rpx;
+  height:80rpx;
+  border-radius: 100%;
+}
+.motivate input{
+  width: 80%;
+  float:right;
+  font-size: 30rpx;
+  color:#d2d2d2;
+  border-radius: 40rpx;
+  padding: 10rpx;
+  background: #e0e6ec;
+  padding-left:30rpx;
+}
+.history{
+  border-bottom:1rpx solid #eee;
+  position: relative
+}
+.history .na{
+  color:#d2d2d2;
+  font-size: 30rpx;
+  position: absolute;
+  /* top:5%; */
+  top:0;
+  left:13%;
+
+}
+.history .reason{
+  padding-left: 90rpx;
+  margin:30rpx 0;
+  white-space: wrap; 
+  font-size: 30rpx;
+  overflow: hidden;
+}
+.history .time{
+  padding-left: 90rpx;
+}
+.history .time image{
+  width:30rpx;
+  height:30rpx;
+}
+.history .time .response{
+  margin-left: 40%;
+
+}
+.more{
+  width:80%;
+  height:200rpx;
+  background-color: #eeeeee;
+  border-radius: 15rpx;
+  /* margin-left: 90rpx;
+  margin-top: 70rpx; */
+  margin:60rpx 0 60rpx 90rpx;
+  padding: 40rpx;
+  box-sizing: border-box;
+}
+.more text{
+  font-size: 30rpx;
+
+}
+.more view{
+  font-size: 30rpx;
+  color:#d7d7d7;
+  margin-top: 20rpx;
+}
+.all{
+  line-height:100rpx;
+  color:#d2d2d2;
+  text-align: center;
+  font-size: 30rpx;
+}
+.aboutbj{
+  padding:40rpx 20rpx;
+  background-color: #fff;
+}
+.aboutbj .bj{
+  border-left: 5rpx solid #fdc848;
+  font-size: 25rpx;
+}
+.about{
+  /* margin-top: 50rpx; */
+  display: flex;
+  justify-content: center;
+}
+.about .content{
+  width:50%;
+  height:600rpx;
+  /* background-color:pink; */
+  margin: 40rpx 15rpx 40rpx 15rpx;
+  border:1rpx solid #ebebeb;
+  box-shadow: 2rpx 2rpx 5rpx #e0e0e0;
+}
+.about .content .bg{
+  width:100%;
+  height:62%;
+  /* 去除图片下方的间隙 */
+  display:block;
+}
+.about .content .info{
+  padding:20rpx 20rpx;
+
+}
+.about .content .message{
+  font-size: 25rpx;
+}
+.grinfo{
+  margin-top: 20rpx;
+}
+.grinfo .name{
+  margin-right: 20%;
+
+}
+.grinfo .pic{
+  width:60rpx;
+  height:60rpx;
+  border-radius: 100%;
+}
+.grinfo image{
+  width:35rpx;
+  height:35rpx;
+}
+.grinfo text{
+  font-size: 25rpx;
+  vertical-align: top;
+}
+.bottombar{
+  width:100%;
+  height:100rpx;
+  position: fixed;
+  bottom:0;
+  left:0;
+  background-color: #fff;
+  border-top:1rpx solid #f6f6f6;
+}
+.control{
+  margin-top: 30rpx;
+  height:30rpx;
+  display: flex;
+  position: relative;
+  justify-content:space-around;
+}
+.control image{
+  width:50rpx;
+  height:50rpx;
+}
+.control text{
+  margin-left: -110rpx;
+}

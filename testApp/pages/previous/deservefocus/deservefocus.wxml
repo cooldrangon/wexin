@@ -1,0 +1,17 @@
+
+
+<view class='focus'>
+    <view class='title'>值得关注的用户</view>
+    <view class='lists'>
+      <view class='childer' wx:for='{{list}}' wx:for-item='item' wx:for-index='idx' >
+        <image src='{{item.avatarimage}}'  mode="aspectFill"></image>
+        <text>{{item.nickname}}</text> 
+        <text wx:if="{{!item.is_follow}}" class='focuss' bindtap='clickfocus' data-id='{{item.id}}' data-index='{{idx}}'>关注</text>
+        <text wx:else class='focused' bindtap='clickfocus' data-id='{{item.id}}' data-index='{{idx}}'>已关注</text>
+        
+      </view>
+    </view>
+    <view class='footers'>
+      <text bindtap='nextgo'>完成，进入首页</text>
+    </view>
+</view>

@@ -1,0 +1,60 @@
+<!-- 图- 文- 文 -->
+<template name="private" >
+    <view class="likeContent">
+      <view class="one">
+        <image src="{{logsrc}}" class="head" mode="aspectFill"></image>
+        <text class="cc">
+          <text class="ctop">{{name}}收藏了你的笔记\n</text>
+          <text class="cbottom">{{detail}}</text>
+        </text>
+        <text class="tim">{{detail}}</text>
+        <!-- <image src="{{logsrc}}" class="pic" mode="aspectFill"></image> -->
+      </view>
+    </view>
+</template>
+
+<!-- 图- 文- 图 -->
+<template name="newstemplate" >
+    <view class="likeContent">
+      <view class="one">
+        <image src="{{logsrc}}" class="head" mode="aspectFill"></image>
+        <text class="cc">
+          <text class="ctop">{{name}}收藏了你的笔记\n</text>
+          <text class="cbottom">{{detail}}</text>
+        </text>
+        <image src="{{logsrc}}" class="pic" mode="aspectFill"></image>
+      </view>
+    </view>
+</template>
+  
+
+<!-- 图- 文- 按钮 --> 
+<template name="inform" >
+    <view class="likeContent">
+      <view class="one">
+        <image src="{{image}}" class="head" mode="aspectFill"></image>
+        <text class="cc">
+          <text class="ctop">{{content}}</text>
+          <text class="cbottom">{{detail}}</text>
+        </text>
+        <text   bindtap="approve" data-id="{{id}}" data-index="{{index}}" class="answer {{state?'active':''}}" wx:if="{{is_yes==0}}" data-type="{{is_type}}">同意</text>
+        <text wx:elif="{{is_yes==1}}">已同意</text>
+      </view>
+    </view> 
+</template>
+
+<!-- 图- 文（一行文本） -按钮 -->
+<template name="onetext" >
+    <view class="childer">
+      <image src='{{image}}'  mode="aspectFill"></image>
+      <text class="who">{{content}}</text> 
+      <text data-index='{{index}}' catchtap="gainText">
+        <text  bindtap="focus" data-yhid="{{user_id}}">
+          <!-- 关注样式 -->
+          <text wx:if="{{is_follow}}" class='focused'>已关注</text>        
+          <!-- 已关注样式 -->
+          <text wx:else  class='focus'>关注</text>
+        </text>
+      </text>
+    </view>
+</template>

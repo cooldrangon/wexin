@@ -1,0 +1,8 @@
+
+@import "../../../components/private/private.wxss";
+
+.likeCollect{
+  background-color: #eeeeee;
+  padding-top: 20rpx;
+  height:100%;
+}

@@ -1,0 +1,22 @@
+<import src="../../../components/private/private.wxml"/>
+
+<view class="likeCollect">
+  <view class="private">
+    <text  class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">好友私信</text>
+    <text  class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">陌生人私信</text>
+  </view>
+
+  <swiper current="{{currentTab}}"  bindchange="bindChange">  
+    <swiper-item  height="900"> 
+      <view wx:for='{{focusman}}'>
+        <template is="private" data='{{...item}}' /> 
+      </view>
+    </swiper-item>  
+
+    <swiper-item  height="900">  
+      <view wx:for='{{man}}'>
+        <template is="private" data='{{...item}}' /> 
+      </view>  
+    </swiper-item>  
+  </swiper>  
+</view>

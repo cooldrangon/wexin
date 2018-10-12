@@ -1,0 +1,40 @@
+.news{
+  background-color: #eeeeee;
+  padding-top: 20rpx;
+  height:100%;
+}
+.news .icon{
+  width:56rpx;
+  height:52rpx;
+  margin-left: 20rpx;
+}
+.news .arrow{
+  width:18rpx;
+  height:35rpx;
+  margin-left: 256rpx;
+}
+.newsFirst,
+.newsSecond{
+  background-color: #fff;
+}
+.newsFirst{
+  margin-bottom: 20rpx;
+  padding-top: 45rpx;
+}
+.newsSecond{
+  margin-bottom: 100rpx;
+}
+.newsFirst .one,
+.newsSecond .two{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:150rpx;
+  border-bottom: 1rpx solid #eeeeee;
+  padding:0 30rpx;
+  box-sizing: border-box;
+}
+.newsSecond>view:last-child{
+  border: 0;
+}
+

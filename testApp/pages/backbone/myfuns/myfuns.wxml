@@ -1,0 +1,13 @@
+<!-- 我的粉丝页面 -->
+<view class="bg">
+  <view class="focusAll">
+    <view class='childer' wx:for='{{focusman}}' wx:for-item='item'>
+      <image src='{{item.avatarimage}}'  mode="aspectFill"></image>
+      <text>{{item.nickname}}</text> 
+      <text class="userintro">{{item.desc}}</text>
+      <!-- <text>{{item.name}} \n{{item.detail}}</text> -->
+      <text class='focus' data-item='{{item}}'>关注</text>
+    </view>
+    <image src="../../../assets/img/sad.png" style='{{notesnone?"display:block":"display:none"}}'></image>
+  </view>
+</view>

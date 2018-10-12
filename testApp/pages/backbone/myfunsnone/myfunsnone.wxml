@@ -1,0 +1,7 @@
+<!-- 我的粉丝无东西页面 -->
+<view class="bg">
+  <view class="none">
+      <image src="../../../assets/img/sad.png" />
+      <view>还没有人关注哟</view>
+  </view>
+</view>

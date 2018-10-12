@@ -1,0 +1,28 @@
+
+<form bindsubmit="formSubmit">
+  <view>
+    <text>请输入姓名:</text>
+    <input name="name" />
+  </view>
+  <view>
+    <text class='moremin'>年龄：</text>
+    <input name="age" type='number' maxlength='2' bindinput='blurage'/>
+  </view>
+  <view class='sex'>
+     <text class='sexe moremin'>性别：</text>
+  <radio-group name="gender" bindchange="radioChange">
+  <radio value="2" checked />女
+  <radio value="1" />男
+ </radio-group>
+  </view>
+  <view>
+    <text>联系方式：</text>
+    <input name="phone"  placeholder='请输入手机号' type='number' style='color:#333' placeholder-style="color:#666" maxlength="11" bindinput='blurPhone'/>
+  </view>
+
+
+
+  <button formType="submit">提交并支付</button>
+ 
+</form>
+

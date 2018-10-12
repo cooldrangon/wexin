@@ -1,0 +1,7 @@
+.btn{
+  padding: 10rpx;
+  width: 50%;
+  background: red;
+  color: white;
+  text-align: center;
+}

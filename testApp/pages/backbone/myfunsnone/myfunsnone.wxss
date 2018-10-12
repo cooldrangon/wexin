@@ -1,0 +1,14 @@
+.bg{
+  background-color: #eeeeee;
+  padding-top:20rpx;
+}
+.none{
+  background-color: #fff;
+  padding:40% 36%;
+  font-size: 30rpx;
+  color:#d1d1d1;
+}
+.none image{
+  width:150rpx;
+  height:120rpx;
+}

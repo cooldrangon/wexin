@@ -1,0 +1,7 @@
+
+<import src="../../../components/private/private.wxml"/>
+<view class="likeCollect">
+  <view wx:for='{{focusman}}'>
+    <template is="newstemplate" data='{{...item}}' /> 
+  </view>
+</view>

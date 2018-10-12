@@ -1,0 +1,29 @@
+<view class='personals'>
+<!-- 读取个人信息： 头像和昵称 -->
+  <view class='toptitle'>请完善个人信息</view>
+
+    <view class="userinfo">
+     
+      <block >
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+  <view class='main'>
+
+    <view class='birthday'>
+      <text>输入你的生日：</text>
+       <picker mode="date" value="{{dateTime1}}" bindchange="changeDateTime1">
+        <view class="tui-picker-detail">
+          {{dateTime1}}
+        </view>
+      </picker>
+    </view>
+    <view class='sex'>
+      性别：<text>{{sex}}</text>
+    </view>
+  </view>
+  <view class='footers'>
+    <text bindtap='nextgo'>下一步</text>
+  </view>
+</view>

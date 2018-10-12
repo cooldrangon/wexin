@@ -1,0 +1,14 @@
+<view class="bg">
+  <view class="focusAll">
+    <view class='childer' wx:for='{{focusman}}' wx:for-item='item'>
+      <view data-index="{{index}}" data-id="{{item.friend_id}}" catchtap='select' style='z-index:2'>
+        <image src='{{item.img}}'></image>
+        <text>{{item.nickname}}</text>
+      </view>
+      <image wx:if="{{ item.state }}" src='../../../image/duihao.png' class='check'></image>
+    </view>
+  </view> 
+</view>
+<view class='confirm' bindtap='confirm'>
+  确定
+</view>

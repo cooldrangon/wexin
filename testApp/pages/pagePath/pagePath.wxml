@@ -1,0 +1,3 @@
+<view>
+<button class='btn' bindtouchend='ends' bindtap='click' bindlongtap='longclick'>text</button>
+</view>

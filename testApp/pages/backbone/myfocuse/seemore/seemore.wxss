@@ -1,0 +1,38 @@
+
+.bg{
+  width: 90%;
+  margin: auto;
+  padding-top:20rpx;
+}
+.childer{
+  height: 126rpx;
+  position: relative;
+}
+.childer image{
+width: 89rpx;
+height: 89rpx;
+margin: auto;
+border-radius: 100%;
+vertical-align: middle;
+margin-right: 20rpx;
+}
+.childer text{
+  margin-left: 75rpx;
+  font-size:30rpx;
+}
+.userintro{
+  color:#d2d2d2;
+  position: absolute;
+  bottom:10%;
+  left:15%;
+}
+.focuss {
+  display: inline-block;
+  float: right;
+  border: 1px solid orange;
+  color: orange;
+  border-radius: 10rpx;
+  font-size: 24rpx !important;
+  padding:6rpx 20rpx;
+  margin-top: 21rpx;
+}

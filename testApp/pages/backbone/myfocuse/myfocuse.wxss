@@ -1,0 +1,61 @@
+.bg{
+  background-color: #eeeeee;
+  padding-top:20rpx;
+}
+.focusAll{
+  background-color: #fff;
+  padding:50rpx 35rpx 0 35rpx;
+  font-size: 30rpx;
+}
+.first{
+  margin-bottom: 50rpx;
+}
+.focusAll .lookmore{
+  float:right;
+  color:#d0d0d0;
+}
+.childer{
+  height: 126rpx;
+  position: relative;
+}
+.childer image{
+width: 89rpx;
+height: 89rpx;
+margin: auto;
+border-radius: 100%;
+vertical-align: middle;
+margin-right: 20rpx;
+}
+.childer text{
+  font-size:30rpx;
+}
+.userintro{
+  color:#d2d2d2;
+  position: absolute;
+  bottom:10%;
+  left:15%;
+}
+.focuss {
+  display: inline-block;
+  float: right;
+  text-align: center;
+  border: 1px solid orange;
+  color: orange;
+  border-radius: 10rpx;
+  font-size: 24rpx !important;
+  padding:6rpx 20rpx;
+  margin-top: 21rpx;
+}
+.attention .second{
+  margin-bottom: 50rpx;
+}
+.focussed {
+  display: inline-block;
+  float: right;
+  border: 1px solid #d1d1d1;
+  color: #d1d1d1;
+  border-radius: 10rpx;
+  font-size: 24rpx !important;
+  padding:6rpx 20rpx;
+  margin-top: 21rpx;
+}

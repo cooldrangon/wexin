@@ -1,0 +1,27 @@
+<view class="mynotes">
+    <view class='modufocuse' wx:for='{{focusman}}' wx:for-item='item'  wx:key='a'>
+      <view class="images">
+        <image wx:for="{{item.images}}" wx:key="*this" src="{{util.size(item)}}"/>
+      </view>
+      <text class="bjtitle">{{item.bjtitle}}</text> 
+      <view class="bjcontent">{{item.bjcontent}}</view>
+      <view class="myself">仅自己可见</view>
+      <view class="control">
+          <image src="../../../assets/img/heart.png"></image>
+          <text>{{item.like}}34</text>
+          <image src="../../../assets/img/message.png"></image>
+          <text>{{item.message}}56</text>
+          <image src="../../../assets/img/star.png"></image>
+          <text>{{item.share}}22</text>
+      </view>
+    </view>
+</view>
+
+ <wxs module="util">
+  // 这里不支持一些新特性
+  module.exports = {
+    size: function (input) {
+      return input.replace('w.h', '150.150')
+    }
+  }
+</wxs>

@@ -1,0 +1,51 @@
+/* .likeCollect{
+  background-color: #eeeeee;
+  padding-top: 20rpx;
+  height:100%;
+}
+.likeCollect .head{
+  width:90rpx;
+  height:90rpx;
+  border-radius: 50%;
+}
+.likeCollect .pic{
+  width:85rpx;
+  height:85rpx;
+  margin-left: 168rpx;
+}
+.likeContent{
+  background-color: #fff;
+  padding-top: 45rpx;
+}
+.likeContent .cc{
+  margin-left: 60rpx;
+}
+.cc .ctop{
+  font-size: 30rpx;
+}
+.cc .cbottom{
+  font-size: 30rpx;
+  color:#d1d1d1;
+}
+.likeContent .one{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:150rpx;
+  border-bottom: 1rpx solid #eeeeee;
+  padding:0 30rpx;
+  box-sizing: border-box;
+}
+.likeContent>view:last-child{
+  border:0;
+}
+ */
+ 
+
+@import "../../../components/private/private.wxss";
+
+.likeCollect{
+  background-color: #eeeeee;
+  padding-top: 20rpx;
+  height:100%;
+}

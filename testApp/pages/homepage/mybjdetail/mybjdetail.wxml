@@ -1,0 +1,117 @@
+<!-- 笔记详情页面 -->
+<view class='tabj'>
+    <view class='childer' wx:for='{{tabj}}' wx:for-item='item'>
+      <image class="datu" src='{{item.logsrc}}'  mode="aspectFill"></image>
+      <!-- 右侧列表 -->
+      <image class="list" src="../../../assets/img/list.png" bindtap="caozuo" />
+      <!-- 操作内容 -->
+      <view class="caozuo"  hidden="{{clicked}}">
+        <view class="edit" bindtap="edit">编辑</view>
+        <view class="del" bindtap="del">删除</view>
+        <view class="classf" bindtap="classfiy">分类</view>
+      </view>
+
+    <!-- 删除弹出框 -->
+  
+    <!-- 分类弹出框 -->
+      <view class='classfiy' style='{{classfiy?"z-index:5;display:block;":""}}'>
+        <view class='classfiy-header'>请选择想要归纳的分类</view>
+        <view class='noterecord' wx:for="{{noterecord}}"  wx:for-index="index">
+        <text style='{{choicefriend==index?"color:#ffc64a;":""}} z-index:999;' bindtap='changchoice' data-index='{{index}}'>{{item}}         </text>
+        </view>
+        <view class='classfiy-footer'>
+          <text bindtap="confirm">确定</text>
+          <text bindtap="cancelclassfiy">取消</text>
+        </view>
+      </view>
+       <!-- 遮罩层 -->
+      <view class='full-screen' style='{{classfiy?"z-index:3;display:block;":""}}'></view>
+
+
+      <view class="ta">
+        <image class="pic" src='{{item.logsrc}}'  mode="aspectFill"></image>
+        <text class="name">{{item.name}}</text>
+        <text class='focus' bindtap='xx'>+关注</text>
+        <view class="describe">小程序的屏幕宽固定为，在所有设备上都是如此，其中为手机屏幕的实际的宽度，例如的，则在由上可知，在不同设备上转换是不相同的，但是宽度的却是固定的，所以可以使用作为单位
+          <view>1.{{item.detail}}</view>
+          <view>2.{{item.detail}}</view>
+          <view>3.{{item.detail}}</view>
+        </view>
+        <view class="location">
+          <image src="../../../../assets/img/location.png"></image>
+          <text>{{item.location}}</text>
+        </view>
+        <view class="time">
+          <text>{{item.time}}</text>
+          <text class='fre'> x 次收藏   x 次点赞</text>
+        </view>
+        <view class="comment">
+          <text class="cbj">笔记评论</text>
+          <text>共 x 条评论</text> 
+        </view>
+        <view class="motivate">
+          <image src="{{item.logsrc}}" mode="aspectFill"></image>
+          <input placeholder-class="phcolor" placeholder="据说评论才是写笔记的最大动力"/>
+        </view>
+        <!-- 笔记回复 -->
+        <view class='history' wx:for='{{tabj}}' wx:for-item='item'>
+          <image class="xiaotu" src='{{item.logsrc}}'  mode="aspectFill"></image>
+          <text class="na">{{item.name}}</text>
+          <view class="reason">小程序的屏幕宽固定为，在所有设备上都是如此，其中为手机屏幕的实际的宽度，例如的，则在由上可知，在不同设备上转换是不相同的，但是宽度的却是固定的，所以可以使用作为单位，来设置布局的</view>
+          <view class="time">
+              <text>{{item.time}}</text>
+              <text class='response' decode="{{true}}">回复&emsp;</text>
+              <image src="../../../../assets/img/heart.png"></image>
+              <text decode="{{true}}">&ensp;{{item.cishu}}51</text>
+          </view>
+          <view class="more">
+              <text>用户名：平板支撑没有太大效果</text>
+              <view hidden="{{!selectedFlag}}" bindtap='watchResponse'>共{}条回复 ></view>
+              <!-- 展开回复 -->
+              <view hidden="{{selectedFlag}}" class="zhankai">
+                <text>07-14  18:09</text> 
+                <text style="float:right">回复\n</text> 
+                <view>用户名：平板支撑没有太大效果</view>
+                <text>07-14  18:09</text> 
+                <text style="float:right">回复\n</text> 
+                <view class="shouqi" bindtap='watchResponse' style="text-align:center">收起回复 v</view>
+              </view>
+          </view>
+        </view>
+        <view class="all" bindtap="watchAllReview">查看所有评论</view>
+      </view>
+      <!-- 相关笔记 -->
+      <view class="aboutbj">
+        <text class="bj" decode="{{true}}">&emsp;相关笔记</text>
+        <view class="about">
+          <view class="content" wx:for='{{aboutbj}}' wx:for-item='item'>
+            <image class="bg" src="{{item.logsrc}}" mode="aspectFill"></image>
+            <view class="info">
+              <text class="message">会觉得发够是你到哪里看金佛吧卡佛</text>
+              <view class="grinfo">
+                <image class="pic" src="{{item.logsrc}}"></image>
+                <text class="name">用户名</text>
+                <image src="../../../../assets/img/heart.png"></image>
+                <text decode="{{true}}">&ensp;{{item.cishu}}51</text>
+              </view>
+            
+            </view>
+          </view>
+          <!-- <view class="content">
+
+          </view> -->
+
+        </view>
+      </view>
+    </view>
+  <view class="bottombar">
+      <view class="control">
+          <image src="../../../../assets/img/heart.png"></image>
+          <text>{{item.like}}34</text>
+          <image src="../../../../assets/img/message.png"></image>
+          <text>{{item.message}}56</text>
+          <image src="../../../../assets/img/star.png"></image>
+          <text>{{item.share}}22</text>
+      </view>
+  </view>
+</view>

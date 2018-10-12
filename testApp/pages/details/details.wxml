@@ -1,0 +1,32 @@
+<view class='personals'>
+  <view class="camera-content">
+    <view class='camera' bindtap='actioncnt'>
+      <image src="{{tempFilePaths}}">
+
+      </image>
+    </view>
+  </view>
+  <view class='main'>
+    <view class='desigansition'>
+      <text>名称 :</text><input bindinput='address' value='{{endtime}}'/>
+    </view>
+    <view class='sex'>
+      性别：
+      <text class='label' wx:for='{{allsex}}' wx:for-index="index" wx:for-item="item" style='{{key==index?"background-color:#ffc64a;color:white;":""}} z-index:9;' bindtap='changColor' data-index='{{index}}'>{{item}}</text>
+    </view>
+    <view class='birthday'>
+      <text>出生年月：</text>
+      <picker mode="date" value="{{dateTime1}}" bindchange="changeDateTime1">
+        <view class="tui-picker-detail">
+          {{dateTime1}}
+        </view>
+      </picker>
+    </view>
+  </view>
+<view class='footers'>
+ <button size='default' type='primary' bindtap='nextgo' class='butt' disabled='{{desbure}}'>创建并绑定</button>
+</view>
+</view>
+
+<!-- 遮罩层 -->
+<view class='full-screen' style='{{seenotes?"z-index:10;display:block;":""}}'></view>

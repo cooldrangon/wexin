@@ -1,0 +1,18 @@
+
+<!-- <import src="../../../components/private/private.wxml"/> -->
+<view class="bg">
+  <view class="focusAll">
+    <view wx:for='{{focusman}}' wx:for-item='item' wx:key="id">   
+    <view class="childer">
+      <image src='{{item.image}}'  mode="aspectFill"></image>
+      <text class="who">{{item.content}}</text> 
+      <text data-index='{{index}}' data-yhid="{{item.user_id}}" catchtap="focus">
+          <!-- 关注样式 -->
+          <text wx:if="{{item.is_follow}}" class='focused'>已关注</text>        
+          <!-- 已关注样式 -->
+          <text wx:else  class='focus'>关注</text>
+      </text>
+    </view>
+    </view>
+  </view>
+</view>

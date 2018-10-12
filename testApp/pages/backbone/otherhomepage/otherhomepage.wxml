@@ -1,0 +1,49 @@
+<view class='header'>
+<image class='allcontext' src='{{headercontext}}'></image>
+  <view class='correlation-account'>
+    <view class='box'>
+      <image src='../../image/homepage.png'></image>
+      <image src='../../image/contact.png'></image>
+      <image src='../../image/account.png'></image>
+    </view>
+    <view class='userinfoimg'>
+      <image src='{{oneselfurl}}'></image>
+    </view>
+    <view class='box'>
+      <image src='../../image/tradd.png' class='tradd'></image>
+      <image src='../../image/contact.png'></image>
+      <image src='../../image/account.png'></image>
+    </view>
+  </view>
+  <view class='related'>
+    <text>20关注</text>
+    <text>12粉丝</text>
+  </view>
+  <view class='editor'>
+    <text>关注</text>
+    <text>添加好友</text>
+    <text>私信</text>
+  </view>
+  <view class='perfect'>
+    <image src='../../image/seat.png'></image>
+    <text class='perfect-font'>{{location}}</text>
+  </view>
+  <view class='personal-bewrite perfect'>
+    <text class='perfect-font'>{{personality}}</text> </view>
+</view>
+<view class='backbone-tab'>
+
+ <text>他的笔记</text>
+</view>
+<view class='corresponding'>
+    <view class='notes-smallspace'>
+      <view wx:for="{{meanslist}}" class='notessmall-banner'>
+        <image src='{{item.img}}' class='notessmall-img'></image>
+        <text class='notessmall-text'>{{item.depict}}</text>
+      </view>
+    </view>  
+</view>
+
+
+
+

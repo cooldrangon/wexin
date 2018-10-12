@@ -1,0 +1,15 @@
+
+
+<view class='homes'>
+  <view class='title'>选择你感兴趣的标签</view>
+  <view class='main'>
+    <view wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index" class='lists' bindtap='changen'>
+      <image  src="{{item.image}}" mode="aspectFill" data-id="{{item.id}}" />
+      <view class='name'>{{item.name}}</view>
+      <view  class='floapop {{item.state?"blocks":""}}' >√</view>
+    </view>
+  </view>
+  <view class='btn'>
+  <view class='gonext' bindtap='go'>下一步</view>
+  </view>
+</view>

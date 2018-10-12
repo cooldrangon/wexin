@@ -1,0 +1,27 @@
+<view class="mynotes">
+    <view class='modufocuse' wx:for='{{focusman}}' wx:for-item='item'  wx:key='a' bindtap='detailsnotes' data-id="{{item.id}}">
+      <view class="images">
+        <image wx:for="{{item.coverimages}}" wx:key="*this" src="{{util.size(item)}}"/> 
+      </view>
+      <text class="bjtitle">{{item.title}}</text> 
+      <view class="bjcontent">{{item.content}}</view>
+      <view class="myselfparent"><text class='myself'>{{item.status}}</text></view>
+      <view class="control">
+          <image src="../../../assets/img/heart.png"></image>
+          <text>{{item.adminre_num}}</text>
+          <image src="../../../assets/img/message.png"></image>
+          <text>{{item.count}}</text>
+          <image src="../../../assets/img/star.png"></image>
+          <text>{{item.is_shouchang}}</text>
+      </view>
+    </view>
+</view>
+
+ <wxs module="util">
+  // 这里不支持一些新特性
+  module.exports = {
+    size: function (input) {
+      return input.replace('w.h', '150.150')
+    }
+  }
+</wxs>

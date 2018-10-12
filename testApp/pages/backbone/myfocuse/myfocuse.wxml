@@ -1,0 +1,34 @@
+
+<view class="bg"> 
+  <view class="focusAll">
+    <view class="interest">
+      <view class="first">
+        <text>你可能感兴趣的人</text>
+        <text class="lookmore" bindtap='seemore'>查看更多  ></text>
+      </view>
+      <view class='childer' wx:for='{{focusman}}' wx:for-item='item' wx:if="{{item.delflow}}">
+        <image src='{{item.avatarimage}}'  mode="aspectFill"></image>
+        <text>{{item.nickname}}</text> 
+        <text class="userintro">{{item.desc}}</text>
+        <!-- <text>{{item.name}} \n{{item.detail}}</text> -->
+        <view bindtap='focus' data-id="{{item.id}}" class='focuss' data-index="{{index}}">
+          <text  wx:if='{{isfollow}}' class='focused'>已关注</text>
+          <text wx:else>+关注</text>
+        </view>
+      </view>
+    </view>
+    <view class="attention">
+       <view class="second">
+        <text>我关注的人</text>
+      </view>
+       <view class='childer' wx:for='{{carepeople}}' wx:for-item='item' wx:if="{{item.is_follow}}">
+        <image src='{{item.avatarimage}}'  mode="aspectFill"></image>
+        <text>{{item.nickname}}</text> 
+        <text class="userintro">{{item.desc}}</text>
+        <!-- <text>{{item.name}} \n{{item.detail}}</text> -->
+        <text class='focussed'  data-item='{{item}}' bindtap='aleadyfocus' data-id="{{item.follow_id}}" data-index="{{index}}">已关注</text>
+      </view>
+    </view>
+  </view>
+
+</view>

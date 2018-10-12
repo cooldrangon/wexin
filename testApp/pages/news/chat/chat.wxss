@@ -1,0 +1,95 @@
+.likeCollect{
+  background-color: #eeeeee;
+  padding-top: 20rpx;
+  height:100%;
+}
+.likeContent{
+  background-color: #fff;
+  padding-top: 50rpx;
+}
+.chatName{
+  text-align: center;
+  height:100rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #efefef;
+}
+.chatContent{
+  padding:60rpx 30rpx 100rpx 35rpx;
+  background-color: #fff;
+}
+.updateTime{
+  text-align: center;
+  color:#d0d0d0;
+}
+.avatar{
+  width:90rpx;
+  height:90rpx;
+  border-radius: 50%;
+}
+.he,
+.me{
+  width:100%;
+  height:150rpx;
+  font-size: 30rpx;
+  box-sizing: border-box;
+}
+.he .message,
+.me .message{
+  padding:10rpx 20rpx;
+  /* border: 1rpx solid #eee; */
+  border-radius: 15rpx;
+}
+.he .message{
+  background-color: #efefef;
+}
+.me .message{
+  background-color: #ffcc5f;
+}
+
+.he .avatar{
+  margin-right: 40rpx;
+}
+.me{
+  margin-left: 160rpx;
+  /* float:right; */
+}
+.me .avatar{
+  margin-left: 40rpx;
+}
+
+
+
+/* 发送内容 */
+.send{
+  width:100%;
+  height:100rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom:0;
+  /* padding:0 20rpx; */
+}
+.sendContent{
+  /* width:100%; */
+  height:65rpx;
+  background-color: #eeeeee;
+  padding:10rpx 30rpx;
+}
+.sendContent input{
+  width:80%;
+  height:100%;
+  background-color: #fff;
+  border-radius: 40rpx;
+  float:left;
+  padding-left:20rpx;
+}
+.sendContent .anniu{
+  width:12%;
+  height:100%;
+  border:1rpx solid #fec749;
+  color:#fec749;
+  border-radius: 15rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  float:right;
+  text-align: center;
+}

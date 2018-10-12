@@ -1,0 +1,50 @@
+ <!-- 笔记回复 -->
+<view class="allResponse">
+   <view class='history' wx:for='{{tabj}}' wx:for-item='item' wx:key="id" wx:for-index='index'>
+    <image class="xiaotu" src='{{item.image}}'  mode="aspectFill"></image>
+    <text class="na">{{item.nickname}}</text>
+    
+    <view wx:if="{{item.content.msg}}">
+      <view class="reason" style="word-break:break-all">小程序的屏幕宽固定为，在所有设备上都是如此，其中为手机屏幕的实际的宽度，例如的，则在由上可知，在不同设备上转换是不相同的，但是宽度的却是固定的，所以可以使用作为单位，来设置布局的{{item.content.msg}}</view>
+    </view>
+    <view wx:else>
+      <view class="reason" style="word-break:break-all">小程序的屏幕宽固定为，在所有设备上都是如此，其中为手机屏幕的实际的宽度，例如的，则在由上可知，在不同设备上转换是不相同的，但是宽度的却是固定的，所以可以使用作为单位，来设置布局的{{item.content}}</view>
+    </view>
+
+    <view class="time">
+        <text class="timea">{{item.create_time}}</text>
+        <text class='response' decode="{{true}}">回复&emsp;</text>
+        <image wx:if="{{item.is_follow}}" src="../../../../assets/img/liked.png"></image>
+        <image wx:else src="../../../../assets/img/heart.png"></image>
+        
+        <text decode="{{true}}">&ensp;{{item.admire_num}}</text>
+    </view>
+    <view class="more" wx:if="{{item.arr !== []}}">
+      <text>最新评论</text>
+      <view hidden="{{!item.selectedFlag}}" bindtap='watchResponse' data-inx="{{index}}" data-id="{{item.id}}">共{{item.count}}条回复 ></view>
+      <block  wx:for='{{item.arr}}' wx:for-item='it' wx:key="id">
+         
+          <!-- 展开回复 -->
+          <view hidden="{{item.selectedFlag}}" class="zhankai">
+            <!-- <text>{{it.create_time}}</text> 
+            <text style="float:right">回复\n</text>  -->
+            <view>{{it.nickname}}：{{it.content}}</view>
+            <text>{{it.create_time}}</text> 
+            <text style="float:right">回复\n</text>   
+          </view>
+      </block>
+      <view hidden="{{item.selectedFlag}}" class="zhankai"> 
+        <view class="shouqi" bindtap='watchResponse' style="text-align:center" data-inx="{{index}}" data-id="{{item.id}}">收起回复 v</view>
+      </view>   
+    </view>
+  </view>
+</view>
+ 
+
+<!-- 发送盒子 -->
+<!-- <view class="send">
+  <view class="sendContent">
+    <input bindinput="getInput" value="{{value}}"/>
+    <view class="anniu" bindtap="sendAnNiu">发送 </view>
+  </view>
+</view> -->

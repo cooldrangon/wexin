@@ -1,0 +1,113 @@
+<view class='homepage'>
+  <view class="top" style="position:fixed;top:0;left:0;overflow:hidden;z-index:999">
+    <view class='topnav'>
+      <view class='fouce {{1===index?"borbto":""}}' bindtap='focuss'>关注</view>
+      <view class='square {{2===index?"borbto":""}}' bindtap='squares'>广场</view>
+      <view class='activity {{3===index?"borbto":""}}' bindtap='activitys'>活动</view>
+      <view class='inform' wx:if="{{}}" bindtap='informs'><image src='../../assets/img/bell.png'></image></view>
+      <view class='inform' wx:else bindtap='informs'><image src='../../assets/img/bell.png'></image></view>
+    </view>
+    
+    <view class='search'>
+      <icon type='search' class='searchlog'></icon>
+      <input value="{{searchValue}}" bindconfirm='oks'  bindinput='watchPassWord' disabled='true' bindtap="wxSearchTab" />
+    </view>
+  </view> 
+    
+  <view class="indexContent">
+      <!-- 关注 -->
+      <view wx:if='{{name==="focuse"}}'>
+        <view wx:if="{{!hasmore}}">
+          <view class="bg">
+            <view class="none">
+            <image src="../../assets/img/sad.png" />
+            <view>还没有关注的人哟</view>
+            </view>
+          </view>   
+        </view>
+        <view wx:else>
+          <view  class='modufocuse childer' wx:for='{{focusman}}'  wx:for-index="idx" wx:for-item='item' wx:key="id" data-id="{{item.id}}" data-class='{{item.from_id}}' bindtap='concern_detail'>
+            <image  class="pic" src='{{item.avatarimage}}' mode="aspectFill" ></image>
+            <text class="name">{{item.nickname}}</text> 
+            <text class="time">{{item.create_time}}</text> 
+            <view class="images" >
+              <image wx:for="{{item.coverimages}}" wx:key="*this"  src="{{util.size(item)}}"/>
+            </view>
+            <text class="bjtitle">{{item.title}}</text> 
+            <view class="bjcontent">{{item.content}}</view>
+            <view class="control">
+              <image wx:if="{{item.is_follow}}" src="{{liked}}" data-id="{{item.id}}" data-index="{{idx}}" catchtap='like'></image>
+              <image wx:else src="{{heart}}" data-id="{{item.id}}" catchtap='like' data-index="{{idx}}"></image>
+              <text>{{item.adminre_num}}</text>
+              <image src="../../assets/img/message.png" data-id="{{item.id}}" bindtap="comment"></image>
+              <text>{{item.count}}</text>
+              <image wx:if='{{item.is_shouchang}}' src="../../assets/img/collected.png" data-shoucang="{{item.is_shouchang}}" data-id="{{item.id}}" data-index="{{idx}}"  catchtap='storeup'></image>
+              <image wx:else src="../../assets/img/star.png" catchtap='storeup' data-shoucang="{{item.is_shouchang}}" data-index="{{idx}}"  data-id="{{item.id}}"></image>
+              <text>{{item.collect_num}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <wxs module="util">
+        // 这里不支持一些新特性
+        module.exports = {
+          size: function (input) {
+            return input.replace('w.h', '100.100')
+          }
+        }
+      </wxs>
+      <!-- 广场 -->
+      <view wx:if='{{name==="squares"}}'>
+        <view class='modufocuse childer' wx:for='{{squares}}' wx:for-item='item' wx:for-index='idx'  wx:key="id" data-id="{{item.id}}" data-gcclass='{{item.from_id}}' data-index="{{idx}}" bindtap='squares_detail' >
+              <image  class="pic" src='{{item.avatarimage}}' mode="aspectFill" bindtap='gomine'></image>
+              <text class="name">{{item.nickname}}</text> 
+              <text class="time">{{item.create_time}}</text> 
+              <view class="images">
+                <image wx:for="{{item.coverimages}}" wx:key="*this" src="{{util.size(item)}}"/>
+              </view>
+              <text class="bjtitle">{{item.title}}</text> 
+              <view class="bjcontent">{{item.content}}</view>
+              <view class="control">
+                <image wx:if="{{item.is_follow}}" src="{{liked}}" data-id="{{item.id}}" data-index="{{idx}}" catchtap='gclike'></image>
+                <image wx:else src="{{heart}}" data-id="{{item.id}}" catchtap='gclike' data-index="{{idx}}"></image>
+                <text>{{item.adminre_num}}</text>
+                <image src="../../assets/img/message.png" data-id="{{item.id}}" bindtap="comment"></image>
+                <text>{{item.count}}</text>
+                <image wx:if='{{item.is_shouchang}}' src="../../assets/img/collected.png"  data-shoucang="{{item.is_shouchang}}" data-id="{{item.id}}" data-index="{{idx}}" catchtap='storeup'></image>
+                <image wx:else src="../../assets/img/star.png" data-shoucang="{{item.is_shouchang}}" catchtap='storeup' data-id="{{item.id}}" data-index="{{idx}}"></image>
+                <text>{{item.collect_num}}</text>
+              </view>
+        </view>
+      </view>   
+
+      
+
+     
+      <!-- 活动 -->
+      <view wx:if='{{name==="activ"}}'>
+        <view class="activ">
+          <view class="location">
+            <image src="../../assets/img/location1.png"></image>
+            <text>{{city}}</text>
+          </view>
+          <!-- url="../activdetail/activdetail" -->
+          <view class="content" wx:for='{{active}}' wx:for-item='item' wx:key="id">
+            <image class="bg" src="{{item.activity_image}}" mode="aspectFill" data-id="{{item.id}}" bindtap='click_detail'></image>
+            <view>{{item.activity_title}}</view>
+            <view class="activtime">{{item.start_time}}  至  {{item.end_time}}</view>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>
+
+<!-- 上拉加载 -->
+  <view wx:if='{{name==="focuse"}}'>
+      <view wx:if="{{hasMore1}}" class="loadmore loading">正在加载...</view>
+      <view wx:else class="loadmore">亲，没有更多了</view>
+  </view>
+  <view wx:if='{{name==="squares"}}'>
+      <view wx:if="{{hasMore2}}" class="loadmore loading">正在加载...</view>
+      <view wx:else class="loadmore">亲，没有更多了</view>
+  </view>

@@ -1,0 +1,287 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wx003794091721d0fc",
+	"projectname": "testapp",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 40,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/personal/personal",
+					"pathName": "pages/personal/personal",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/previous/deservefocus/deservefocus",
+					"pathName": "pages/previous/deservefocus/deservefocus",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/homepage/notes/notes",
+					"pathName": "pages/homepage/notes/notes",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/previous/deservefocus/deservefocus",
+					"pathName": "pages/previous/deservefocus/deservefocus",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/focuse/focuse",
+					"pathName": "pages/focuse/focuse",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/homepage/homepage",
+					"pathName": "pages/homepage/homepage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/details/details",
+					"pathName": "pages/details/details",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/backbone/backbone",
+					"pathName": "pages/backbone/backbone",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/activdetail/sign/sign",
+					"pathName": "pages/activdetail/sign/sign",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/focuse/watchResponse/watchResponse",
+					"pathName": "pages/focuse/watchResponse/watchResponse",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/homepage/bjfocuse/bjfocuse",
+					"pathName": "pages/homepage/bjfocuse/bjfocuse",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/homepage/bjfocuse/watchResponse/watchResponse",
+					"pathName": "pages/homepage/bjfocuse/watchResponse/watchResponse",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/backbone/editprofile/editprofile",
+					"pathName": "pages/backbone/editprofile/editprofile",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/backbone/myNotesMore/myNotesMore",
+					"pathName": "pages/backbone/myNotesMore/myNotesMore",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/backbone/myNotesClassify/myNotesClassify",
+					"pathName": "pages/backbone/myNotesClassify/myNotesClassify",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/backbone/mnc/mnc",
+					"pathName": "pages/backbone/mnc/mnc",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/activdetail/sign/sign",
+					"pathName": "pages/activdetail/sign/sign",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/backbone/myfocuse/myfocuse",
+					"pathName": "pages/backbone/myfocuse/myfocuse",
+					"query": ""
+				},
+				{
+					"id": 21,
+					"name": "pages/activdetail/sign/sign",
+					"pathName": "pages/activdetail/sign/sign",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/activdetail/sign/sign",
+					"pathName": "pages/activdetail/sign/sign",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/backbone/myfuns/myfuns",
+					"pathName": "pages/backbone/myfuns/myfuns",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/activdetail/signsuccess/signsuccess",
+					"pathName": "pages/activdetail/signsuccess/signsuccess",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/backbone/myfriend/myfriend",
+					"pathName": "pages/backbone/myfriend/myfriend",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/backbone/myfunsnone/myfunsnone",
+					"pathName": "pages/backbone/myfunsnone/myfunsnone",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/news/news",
+					"pathName": "pages/news/news",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/news/likeCollect/likeCollect",
+					"pathName": "pages/news/likeCollect/likeCollect",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/news/receiveComments/receiveComments",
+					"pathName": "pages/news/receiveComments/receiveComments",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/news/addAttention/addAttention",
+					"pathName": "pages/news/addAttention/addAttention",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/news/@/@",
+					"pathName": "pages/news/@/@",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/news/personalChat/personalChat",
+					"pathName": "pages/news/personalChat/personalChat",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/news/formatNews/formatNews",
+					"pathName": "pages/news/formatNews/formatNews",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/news/serviceNews/serviceNews",
+					"pathName": "pages/news/serviceNews/serviceNews",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/news/chat/chat",
+					"pathName": "pages/news/chat/chat",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/news/@friend/@friend",
+					"pathName": "pages/news/@friend/@friend",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/backbone/newclassify/newclassify",
+					"pathName": "pages/backbone/newclassify/newclassify",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/backbone/searchaccount/searchaccount",
+					"pathName": "pages/backbone/searchaccount/searchaccount",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/backbone/otherhomepage/otherhomepage",
+					"pathName": "pages/backbone/otherhomepage/otherhomepage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/backbone/myfunsnone/myfunsnone",
+					"pathName": "pages/backbone/myfunsnone/myfunsnone"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,31 @@
+<view class="likeCollect">
+  <view class="likeContent">
+    <view class="chatName">
+      聊天的人
+    </view>
+  </view>
+  <!-- 聊天内容 -->
+  <view class="chatContent">
+    <view class="updateTime">8:12</view>
+    <view class="chatMessage1" wx:for='{{information1}}' wx:for-item='item' wx:key="avatar">
+      <view class="he">
+        <image class="avatar" src="{{item.avatar}}" />
+        <text class="message">{{item.detail}}</text>
+      </view>
+    </view>
+     <view class="chatMessage2" wx:for='{{information2}}' wx:for-item='item' wx:key="avatar">
+      <view class="me">
+        <text class="message">{{item.detail}}</text>
+        <image class="avatar" src="{{item.avatar}}" />
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 发送盒子 -->
+<view class="send">
+  <view class="sendContent">
+    <input />
+    <view class="anniu" bindtap="sendAnNiu">发送 </view>
+  </view>
+</view>

@@ -1,0 +1,105 @@
+.head{
+  width:90rpx;
+  height:90rpx;
+  border-radius: 50%;
+}
+.pic{
+  width:85rpx;
+  height:85rpx;
+  /* margin-left: 60rpx; */
+}
+.tim{
+  display: inline-block;
+  font-size: 30rpx;
+  color:#d1d1d1;
+  margin-left: 60rpx;
+}
+.likeContent{
+  background-color: #fff;
+  padding-top: 45rpx;
+}
+.likeContent .cc{
+  margin-left: 20rpx;
+  width: 50%;
+}
+.cc .ctop{
+  font-size: 30rpx;
+}
+.cc .cbottom{
+  font-size: 30rpx;
+  color:#d1d1d1;
+}
+.likeContent .one{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:150rpx;
+  border-bottom: 1rpx solid #eeeeee!important;
+  padding:0 30rpx;
+  box-sizing: border-box;
+}
+.likeContent>view:last-child{
+  border:0;
+}
+.answer{
+  width:30%;
+  display: inline-block;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+  color:#d0d0d0;
+   border: 1rpx solid #d0d0d0;
+  border-radius: 20rpx;
+}
+.answer.active{
+ color:#ffc649;
+  border: 1rpx solid #ffc649;
+  display: none;
+}
+
+
+/* onetext */
+
+.childer{
+  height: 150rpx;
+  position: relative;
+}
+.childer image{
+width: 89rpx;
+height: 89rpx;
+margin: auto;
+border-radius: 100%;
+vertical-align: middle;
+margin-right: 20rpx;
+}
+.childer .who{
+  margin-left: 75rpx;
+  font-size:30rpx;
+}
+.userintro{
+  color:#d2d2d2;
+  position: absolute;
+  bottom:10%;
+  left:15%;
+}
+.focus{
+display: inline-block;
+float: right;
+border-radius: 10rpx;
+font-size: 24rpx !important;
+padding:6rpx 20rpx;
+margin-top: 21rpx;
+border: 1px solid orange;
+color: orange;
+}
+.focused{
+  display: inline-block;
+  float: right;
+  border-radius: 10rpx;
+  font-size: 24rpx !important;
+  padding:6rpx 20rpx;
+  margin-top: 21rpx;
+  border: 1px solid #d1d1d1;
+  color: #d1d1d1;
+}
+

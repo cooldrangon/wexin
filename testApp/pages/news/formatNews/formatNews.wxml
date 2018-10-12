@@ -1,0 +1,6 @@
+<import src="../../../components/private/private.wxml"/>
+<view class="likeCollect">
+  <view wx:for='{{focusman}}' wx:for-index="index" wx:key='index'>
+    <template is="inform" data-index="{{index}}" data='{{...item,index}}'/> 
+  </view>
+</view> 

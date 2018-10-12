@@ -1,0 +1,147 @@
+<!-- 笔记详情页面 -->
+<view class='tabj'>
+    <view class='childer'>
+       <!-- 轮播 --> 
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" height="800">
+        <block wx:for="{{lo.coverimages}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" width="100%"  bindtap="previewImg" height="800" mode="aspectFill"/>
+            <!-- width="355" height="150" --> 
+          </swiper-item> 
+        </block>
+      </swiper>
+      <view class="ta">
+        <image class="pic" src='{{lo.coverimages[1]}}'  mode="aspectFill"></image>
+        <text class="name">{{lo.name}}</text>
+        <text bindtap='focus'>
+          <text  wx:if='{{isfollow}}' class='focused'>已关注</text>
+          <text wx:else class='focus'>+关注</text>
+        </text>
+        
+        <view class="describe">小程序的屏幕宽固定为，在所有设备上都是如此，其中为手机屏幕的实际的宽度，例如的，则在由上可知，在不同设备上转换是不相同的，但是宽度的却是固定的，所以可以使用作为单位
+          <view>1.{{lo.content}}</view>
+          <view>2.{{lo.content}}</view>
+          <view>3.{{lo.content}}</view>
+        </view>
+        <view class="location"  bindtap='seenotes'>
+          <image src="../../../assets/img/location.png"></image>
+          <text>{{lo.location}}</text>
+          <image src="../../../assets/img/share.png" bindtap='seenotes' class="sharebj"></image>
+        </view>
+        <view class="time">
+          <text>{{lo.create_time}}</text>
+          <text class='fre'> {{lo.collect_num}} 次收藏   {{lo.adminre_num}} 次点赞</text>
+        </view>
+        <view class="comment">
+          <text class="cbj">笔记评论</text>
+          <text>共{{lo.count}}条评论</text> 
+        </view>
+        <!-- 笔记回复 -->
+        <view class='history'  wx:for="{{firstReviewData}}" wx:for-item="item" wx:key="{{works_id}}">
+          <image class="xiaotu" src='{{item.avatarimage}}'  mode="aspectFill"></image>
+          <text class="na">{{item.nickname}}</text>
+          <view class="reason">小程序的屏幕宽固定为，在所有设备上都是如此，其中为手机屏幕的实际的宽度，例如的，则在由上可知，在不同设备上转换是不相同的，但是宽度的却是固定的，所以可以使用作为单位，来设置布局的{{item.content}}</view>
+          <view class="time">
+              <text>{{item.create_time}}</text>
+              <text class='response' decode="{{true}}" bindtap='responseReview' style="color:#000">回复&emsp;</text>
+              <image wx:if="{{item.is_follow}}" src="../../../assets/img/liked.png" data-id="{{item.works_id}}" bindtap='reviewlike'></image>
+              <image wx:else src="../../../assets/img/heart.png" data-id="{{item.works_id}}" bindtap='reviewlike'></image>
+              <text decode="{{true}}">&ensp;{{item.admire_num}}</text>
+          </view>
+          <view class="more" wx:if="{{responsedata}}">
+              <text>最近评论</text>
+              <view hidden="{{!selectedFlag}}" bindtap='watchResponse'>共{{item.count}}条回复 ></view>
+              
+              <view hidden="{{selectedFlag}}" class="zhankai">
+                <!-- <text> 2018-9-10 13:03</text>  -->
+                <!-- <text style="float:right" bindtap='responseReview'>回复\n</text>  -->
+                <view wx:for="{{responsedata}}" wx:for-item="it" wx:key="{{works_id}}">
+                    <view style="word-break:break-all">{{it.nickname}}：{{it.content}}</view>
+                    <text class="shijian">{{it.create_time}}</text> 
+                    <!-- <text style="float:right" bindtap='responseReview' class="resp">回复\n</text>  -->
+                </view>
+                <block wx:if="{{respondata}}" wx:for="{{respondata}}" wx:for-item="item" wx:key="{{works_id}}">
+                  <view style="word-break:break-all">{{item.info.nickname}}：{{item.content.msg}}</view>
+                  <text class="shijian">{{item.create_time}}</text> 
+                  <!-- <text style="float:right" bindtap='responseReview' class="resp">回复\n</text> -->
+                </block>
+                <view class="shouqi" bindtap='watchResponse' style="text-align:center">收起回复 v</view>
+              </view>
+          </view>
+        </view>
+        <view class="all" bindtap="watchAllReview">查看所有评论</view>
+      </view>
+    </view>
+     <!-- 相关笔记 -->
+      <view class="aboutbj">
+        <text class="bj" decode="{{true}}">&emsp;相关笔记</text>
+        <view class="about">
+          <view class="content" wx:for='{{aboutbj}}' wx:for-item='item' wx:key="id" bindtap='notesdetail' data-id="{{item.id}}">
+            <image class="bg" src="{{item.avatarimage}}" mode="aspectFill"></image>
+            <view class="info">
+              <text class="message">{{item.title}}</text>
+              <view class="grinfo">
+                <image class="pic" src="{{item.avatarimage}}"></image>
+                <text class="name" style="line-height:40rpx">{{item.nickname}}</text>
+                <image src="../../../assets/img/heart.png"></image>
+                <text decode="{{true}}">&ensp;{{item.adminre_num}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+</view>
+  <view class="bottombar">
+      <view class="control">
+          <image wx:if="{{lo.is_follow}}" src="../../../assets/img/liked.png" data-id="{{lo.id}}" catchtap='like'></image>
+          <image wx:else src="../../../assets/img/heart.png" data-id="{{lo.id}}" catchtap='like'></image>
+          <text>{{lo.adminre_num}}</text>
+
+          <image src="../../../assets/img/message.png" bindtap='bindReview'></image>
+          <text>{{lo.count}}</text>
+
+          <image wx:if="{{lo.is_shouchang}}" src="../../../assets/img/collected.png" catchtap='storeup' data-id="{{lo.id}}" data-shoucang="{{lo.is_shouchang}}"></image>
+          <image wx:else src="../../../assets/img/star.png" catchtap='storeup' data-id="{{lo.id}}" data-shoucang="{{lo.is_shouchang}}"></image>
+          <text>{{lo.collect_num}}</text>
+      </view>
+  </view>
+
+  <!-- 弹出框 -->
+      <view class='storeup' style='{{storeup?"z-index:5;display:block;":""}}'>
+        <view class='storeup-header' bindtap='newcreate'>+ 新建分类</view>
+        <view class='noterecord' wx:for="{{storeclassfiy}}" wx:for-index="index" wx:key="id" >
+          <text style='{{choicefriend==index?"color:#ffc64a;":""}} z-index:999;' bindtap='changchoice' data-index='{{index}}' data-shareid='{{item.user_id}}' data-id='{{item.id}}'>{{item.class_name}}</text>
+        </view>
+        <view class='storeup-footer'>
+          <text bindtap="confirm">确定</text>
+          <text bindtap="cancelstoreup">取消</text>
+        </view>
+      </view>
+      <!-- 遮罩层 -->
+      <view class='full-screen' style='{{storeup?"z-index:3;display:block;":""}}'></view>
+
+<!-- 调出评论输入 -->
+<view class="release" hidden="{{!releaseFocus}}">
+  <textarea class="text"
+  placeholder-class="input_null"
+  fixed="true"
+  maxlength="-1"
+  show-confirm-bar="false"
+  cursor-spacing="15"
+  auto-height="true"
+  focus="{{releaseFocus}}"
+  placeholder="" bindinput="getInput" value="{{value}}"></textarea>
+  <!-- value="{{value}}" -->
+  <view class="submit" bindtap='bindSend'>发送</view>
+</view>
+
+<!-- 点击独立账号弹出的窗口 -->
+<view class='seenotes' style='{{seenotes?"z-index:5;display:block;":""}}'>
+  <view class='seenotes-header'>是否分享笔记</view>
+  <view class='seenotes-footer'>
+    <button bindtap="confirmer" open-type='share'>确定</button>
+    <button bindtap="cancelseenotes">取消</button>
+  </view>
+</view>
+
+

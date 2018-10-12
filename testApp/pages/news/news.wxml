@@ -1,0 +1,42 @@
+<view class="news">
+  <view class="newsFirst">
+    <view class="one" bindtap="likeCollect">
+      <image src="../../assets/img/zan.png" class="icon"></image>
+      <text>获赞和收藏</text>
+      <image src="../../assets/img/arrow.png" class="arrow"></image>
+    </view>
+    <view class="one" bindtap="receiveReview">
+      <image src="../../assets/img/revirew.png" class="icon"></image>
+      <text>收到的评论</text>
+      <image src="../../assets/img/arrow.png" class="arrow"></image>
+    </view>
+    <view class="one" bindtap="addAttention">
+      <image src="../../assets/img/concern.png" class="icon"></image>
+      <text>新增关注</text>
+      <image src="../../assets/img/arrow.png" class="arrow"></image>
+    </view>
+    <view class="one" bindtap="aboutMe">
+      <image src="../../assets/img/@.png" class="icon"></image>
+      <text>@我</text>
+      <image src="../../assets/img/arrow.png" class="arrow"></image>
+    </view>
+  </view>
+
+  <view class="newsSecond">
+    <view class="two" bindtap="personalChat">
+      <image src="../../assets/img/envelope.png" class="icon"></image>
+      <text>私信</text>
+      <image src="../../assets/img/arrow.png" class="arrow"></image>
+    </view>
+    <view class="two" bindtap="formatNews">
+      <image src="../../assets/img/voice.png" class="icon"></image>
+      <text>通知消息</text>
+      <image src="../../assets/img/arrow.png" class="arrow"></image>
+    </view>
+    <view class="two" bindtap="serviceNews">
+      <image src="../../assets/img/service.png" class="icon"></image>
+      <text>客服消息</text>
+      <image src="../../assets/img/arrow.png" class="arrow"></image>
+    </view>
+  </view>
+</view>

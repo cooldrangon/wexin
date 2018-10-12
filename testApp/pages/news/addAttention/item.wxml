@@ -1,0 +1,11 @@
+<template name="home_item" >
+  <view class="bg">
+    <view class="focusAll">
+      <view class='childer' wx:for='{{focusman}}' wx:for-item='item'>
+        <image src='{{item.logsrc}}'  mode="aspectFill"></image>
+        <text>{{item.name}}关注了你</text> 
+        <text class='del' data-item='{{item}}'  data-index='{{index}}'>关注</text>
+      </view>
+    </view>
+  </view>
+</template>

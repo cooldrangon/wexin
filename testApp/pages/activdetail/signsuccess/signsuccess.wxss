@@ -1,0 +1,58 @@
+/* pages/activdetail/signsuccess/signsuccess.wxss */
+/* pages/activdetail/activdetail.wxss */
+.activdetail{
+  background-color: #eeeeee;
+  padding-top:20rpx;
+}
+.activdetail .detail{
+  background-color: #fff;
+  height:100%;
+  margin-bottom: 150rpx;
+  padding:80rpx 30rpx;
+}
+.detail .title{
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50rpx;
+}
+.detail .site,
+.detail .sponsor,
+.detail .actime,
+.detail .accost,
+.detail .contact,
+.detail .introduction{
+  margin-bottom: 40rpx;
+  font-size: 30rpx;
+}
+.imgtext image{
+  width:100%;
+  border-radius: 5%;
+}
+.imgtext view{
+  margin:20rpx 0;
+  font-size: 30rpx;
+}
+.signok{
+  width:100%;
+  height:150rpx;
+  border-top: 1rpx solid #d1d1d1;
+  position: fixed;
+  bottom:0;
+  left:0;
+  background-color: #fff;
+}
+.signok text{
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #fec749;
+  color: #fff;
+  background-color: #fec749;
+  border-radius:20rpx;
+  font-size: 30rpx;
+  padding:10rpx 25rpx;
+  margin-top:5%;
+  margin-left: 40%;
+}
+
+
+

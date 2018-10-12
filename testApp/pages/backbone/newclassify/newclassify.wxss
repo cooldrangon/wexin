@@ -1,0 +1,55 @@
+.all{
+  width: 100%;
+  height: 511rpx;
+  background: #eee;
+
+}
+.banner{
+  width: 100%;
+  height: 490rpx;
+  margin-top: 21rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.banner view{
+  margin-left: 21rpx;
+  margin-top: 45rpx;
+  display: flex; 
+}
+.banner view text{
+  font-size: 25rpx;
+  line-height: 52rpx;
+  width: 100rpx;
+}
+.banner .synopsis{
+  margin-top: -15rpx;
+  display: flex;
+}
+.banner .synopsis text{
+  width: 100rpx;
+
+}
+page{
+background: #eee;
+height:100%;
+}
+.place-holder{
+  font-size: 25rpx;
+  color: #eee;
+  text-align: center;
+}
+.confirm{
+  position: fixed;
+  bottom: 49rpx;
+  left: 200rpx;
+  width: 357rpx;
+  height: 95rpx;
+  border-radius: 40rpx;
+  background: #ffc64a;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  line-height: 95rpx;
+}

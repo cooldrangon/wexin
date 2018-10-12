@@ -1,0 +1,28 @@
+<view class='banner'>
+</view>
+<view class='content'>
+  <view class='wire'>
+    <text class='obode'> 常住地:</text>
+    <input bindinput='address' value='{{endtime}}'></input>
+  </view>
+  <view class='birthday wire'> 
+    <text> 生日:</text><picker mode="date" value="{{dateTime1}}" bindchange="changeDateTime1">
+        <view class="tui-picker-detail">
+          {{dateTime1}}
+        </view>
+      </picker> 
+      </view> 
+  <view class='wire'>
+   <text> 个性签名:</text>
+    <input bindinput='personality' value='{{personality}}'></input>
+  </view>
+  <view>
+    <text class='interest'> 感兴趣的内容:</text>
+  </view>
+</view>
+<view class='label-box'>
+  <text class='label' wx:for='{{counter}}' wx:for-index="index" wx:for-item="item" style='{{item.status?"background-color:#ffc64a;color:white;":""}} z-index:999;' bindtap='changColor' data-index='{{index}}' data-id='{{item.id}}'>{{item.nickname}}</text>
+</view>
+<view class='keep' bindtap='keep'>
+   保存
+</view>

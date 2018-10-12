@@ -1,0 +1,35 @@
+<!-- 活动详情页 -->
+<import src="../../utils/wxParse/wxParse.wxml"/>
+<view class="activdetail">
+  <view class="detail">
+    <view class="title">{{focusman.activity_title}}</view>
+    <view class="site">
+        活动地点：
+        <view>{{focusman.place}}</view>
+    </view>
+    <view class="sponsor">
+        主办方：
+        <view>{{focusman.hostsquare}}</view>
+    </view>
+    <view class="actime">
+         活动时间：
+        <view>{{focusman.start_time}}   至  {{focusman.end_time}}</view>
+    </view>
+    <view class="accost">
+         费用：
+        <view>{{focusman.price}}</view>
+    </view>
+    <view class="introduction">
+         活动简介：
+        <!-- <view>{{focusman.detailcontent}}</view> -->
+          <view class="wxParse">
+              <template is="wxParse" data="{{wxParseData:article_content.nodes}}"/>
+          </view>
+    </view>
+  </view>
+  <view class="sign">
+   <text wx:if="{{status}}">已报名</text>
+    <text wx:else bindtap='gosign'>线上报名</text>
+  </view>
+</view>
+

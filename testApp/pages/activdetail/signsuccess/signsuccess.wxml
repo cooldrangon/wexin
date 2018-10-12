@@ -1,0 +1,41 @@
+<!-- 报名成功现实的详细信息 -->
+<view class="activdetail">
+  <view class="detail" wx:for='{{focusman}}' wx:for-item='item'>
+    <view class="title">亲子健康烘焙课堂</view>
+    <view class="site">
+        活动地点：
+        <view>xxxx{{item.site}}</view>
+    </view>
+    <view class="sponsor">
+        举办人：
+        <view>xxxx{{item.sponsor}}</view>
+    </view>
+    <view class="actime">
+         活动时间：
+        <view>xxxx{{item.sponsor}}</view>
+    </view>
+    <view class="accost">
+         费用：
+        <view>xxxx{{item.sponsor}}</view>
+    </view>
+    <view class="contact">
+         联系方式：
+        <view>xxxx{{item.sponsor}}</view>
+    </view>
+    <view class="introduction">
+         活动简介：
+        <view>xxxx{{item.sponsor}}</view>
+    </view>
+    <view class="imgtext">
+      <image src="{{item.logsrc}}"></image>
+      <view style="white-space: pre-line;width:100%">所以方法二使用之所以会出现那么大的一片空白，就是因为它保留空白和。但是方法四就会去除空白和。对于个人的编程习惯，因为文字不确定多少的问题，我是标签中间加文字</view>
+      <image src="{{item.logsrc}}"></image>
+      <view style="white-space: pre-line;width:100%">所以方法二使用之所以会出现那么大的一片空白，就是因为它保留空白和。但是方法四就会去除空白和。对于个人的编程习惯，因为文字不确定多少的问题，我是标签中间加文字</view>
+    </view>
+  </view>
+  <view class="signok">
+    <text>报名成功</text>
+  </view>
+
+</view>
+

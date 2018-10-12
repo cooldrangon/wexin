@@ -1,0 +1,67 @@
+.mynotes{
+  padding:20rpx;
+  background-color: #eaeaea;
+}
+.modufocuse{
+  background: red;
+  padding: 30rpx 10rpx 50rpx 10rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  margin-bottom: 20rpx;
+  position:relative;
+  font-size:16px;
+  box-shadow: 3rpx 3rpx 6rpx #dfdfdf;
+  
+}
+
+.images{
+  display: flex;
+  /* position: relative; */
+  justify-content:center;
+}
+ .images image {
+  margin: 20rpx 10rpx;
+  width: 30%;
+  height: 200rpx;
+}
+.bjtitle{
+  margin-left: 10rpx;
+}
+.bjcontent{
+  margin-top: 15rpx;
+  color:#d2d2d2;
+  padding:0 10rpx;
+  box-sizing: border-box;
+  width:100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  font-size: 25rpx;
+}
+.myselfparent{
+  display: flex;
+}
+.myself{
+  /* background-color: pink; */
+  padding:10rpx 10rpx;
+  border: 1rpx solid #fec749;
+  color:#fec749;
+  border-radius: 15rpx;
+  font-size: 25rpx;
+  margin-left: 10rpx;
+}
+.control{
+  margin-top: 30rpx;
+  height:30rpx;
+  display: flex;
+  position: relative;
+  justify-content:space-around;
+}
+.control image{
+  width:50rpx;
+  height:50rpx;
+}
+.control text{
+  margin-left: -110rpx;
+}

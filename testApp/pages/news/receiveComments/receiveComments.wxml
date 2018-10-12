@@ -1,0 +1,17 @@
+<view class="likeCollect">
+  <view class="likeContent">
+    <block wx:for='{{focusman}}' wx:key="id">
+      <view class="one" bindtap="reviewDetail" data-id="{{item.works_id}}">
+        <image src="{{item.image}}" class="head" mode="aspectFill"></image>
+        <text class="cc">
+          <text class="ctop">{{item.desc}}\n</text>
+          <text class="cbottom">{{item.create_time}}\n</text>
+
+          <text class="ctop">{{item.content}}\n</text>
+          <text class="cbottom">{{item.desc}}\n</text>    
+        </text>
+        <image src="{{item.img}}" class="pic" mode="aspectFill"></image>
+      </view>
+    </block>
+  </view>
+</view>

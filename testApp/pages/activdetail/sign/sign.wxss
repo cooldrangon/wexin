@@ -1,0 +1,29 @@
+/* pages/activdetail/sign/sign.wxss */
+form view{
+  width: 100%;
+  height:120rpx;
+  display: flex;
+  align-items: center;
+  padding-left:30rpx;
+  border-bottom: 1rpx solid #eee;
+}
+form view text{
+ width:250rpx; 
+}
+form view .moremin{
+  width:140rpx; 
+}
+form button{
+  text-align: center;
+  display: inline-block;
+  border:0;
+  width:300rpx;
+  height:80rpx;
+  color: white;
+  line-height: 80rpx;
+  border-radius: 20rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  background: #ffc649;
+  margin: 120rpx 230rpx;
+}

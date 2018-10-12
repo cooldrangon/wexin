@@ -1,0 +1,389 @@
+.homepage{
+  margin: 0;
+  /* padding: 10rpx; */
+  height:100%;
+  background-color: #e5e5e5;
+}
+.bg{
+  background-color: #eeeeee;
+  /* padding-top:20rpx; */
+}
+.none{
+  background-color: #fff;
+  padding:40% 36%;
+  font-size: 30rpx;
+  color:#d1d1d1;
+}
+.none image{
+  width:150rpx;
+  height:120rpx;
+}
+
+.top{
+  /* padding: 0 30rpx; */
+  background-color: #fff;
+  padding-bottom: 20rpx;
+  /* margin-bottom: 20rpx; */
+  width:100%;
+  height:210rpx;
+}
+.topnav{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 50rpx;
+  border-bottom:1rpx solid #e5e5e5;
+}
+.topnav view{
+  flex: 1;
+  text-align: center;
+  padding-bottom:10rpx
+}
+.inform image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: -16rpx;
+  vertical-align: middle
+}
+.borbto::after{
+  clear: both;
+  display: block;
+  content: '';
+  width: 50rpx;
+  margin-left: 65rpx;
+  margin-top: 10rpx;
+  border-bottom: 2px solid orange;
+  font-weight: 1000;
+}
+.search{
+  width: 65%;
+  margin: auto;
+  display: flex;
+  border-radius: 40rpx;
+  padding: 10rpx;
+  background: #e0e6ec;
+  padding-left:20rpx;
+  margin-bottom: 30rpx
+}
+.search input{
+  height:1.6rem
+}
+.searchlog{
+margin-right: 10rpx;
+margin-top:10rpx;
+}
+
+.indexContent{
+  width:100%;
+  height:100%;
+  background-color: #e5e5e5!important;
+  padding-top: 247rpx;
+}
+
+
+/* 关注模块样式 */
+.modufocuse{
+  /* width: 100%; */
+  height: 560rpx;
+  background: red;
+  padding: 60rpx 20rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  margin-bottom: 20rpx;
+  position:relative;
+  font-size:16px;
+  /* margin-top: 180rpx; */
+}
+.childer .pic{
+width: 100rpx;
+height: 100rpx;
+margin: auto;
+border-radius: 100%;
+vertical-align: middle;
+margin-right: 20rpx;
+}
+
+.name{
+ position:absolute;
+ top:50rpx;
+ left:20%;
+ font-size: 30rpx;
+}
+
+.time{
+ position:absolute;
+ top:110rpx;
+ left:20%;
+ color: #d1d1d1;
+ font-size: 30rpx;
+}
+.images{
+  display: flex;
+  justify-content:center;
+}
+ .images image {
+  margin: 40rpx 15rpx;
+  width: 30%;
+  height: 200rpx;
+}
+.bjcontent{
+  margin-top: 15rpx;
+  color:#d2d2d2;
+  width:100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+}
+.control{
+  margin-top: 30rpx;
+  height:30rpx;
+  display: flex;
+  position: relative;
+  justify-content:space-around;
+}
+.control image{
+  width:65rpx;
+  height:65rpx;
+}
+.control text{
+  margin-left: -110rpx;
+}
+
+
+/* 广场模板样式 */
+.a{
+  width: 100%;
+  height: 200rpx;
+  background: yellow
+}
+.collect{
+  position: fixed;
+  width: 380rpx;
+  background: white;
+  bottom: 400rpx;
+  left: 190rpx;
+  border-radius: 41rpx;
+  z-index: -5;
+  display: none;
+  font-size: 25rpx;
+}
+.collect-header{
+  border-top-right-radius: 39rpx;
+  border-top-left-radius: 39rpx;
+  width: 100%;
+  height: 91rpx;
+  text-align: center;
+  line-height: 91rpx;
+  border-bottom: 1px solid #eeeeee;
+}
+.collect-footer{
+  border-bottom-right-radius: 39rpx;
+  border-bottom-left-radius: 39rpx;
+  width: 100%;
+  height: 91rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collect-footer text{
+  width: 50%;
+  text-align: center;
+  line-height: 80rpx;
+}
+.collect-footer text:first-child{
+  border-right:1px solid #eeeeee;
+}
+.collect .noterecord text{
+  display: inline-block;
+  height: 70rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 70rpx;
+  border-bottom: 1px solid #eeeeee;
+}
+.full-screen{
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgba(8, 8, 8, 0.5);
+  display: none;
+}
+
+
+/* 活动模块样式 */
+.activ {
+  position: relative;
+  
+}
+.content{
+  margin:20rpx;
+  background-color: #fff;
+  border-radius:5%;
+  box-shadow: 2rpx 2rpx 5rpx #d2d2d2;
+ 
+}
+/* 定位图标 */
+.activ .location{
+  position:fixed;
+  right:-5rpx;
+  top:140rpx;
+  display: flex;
+  align-items: center;
+  z-index:999;
+  overflow: hidden;
+}
+
+.activ .location image{
+  width:35rpx;
+  height:35rpx;
+}
+.activ .location text{
+  font-size: 30rpx;
+  width: 90rpx;
+  height: 40rpx;
+  overflow: hidden;
+}
+.content image{
+  width:100%;
+  border-top-left-radius:5%;
+  border-top-right-radius:5%;
+}
+.content view{
+  font-size: 30rpx;
+  margin:0 0 0 30rpx;
+}
+.content .activtime{
+  padding-bottom: 30rpx;
+}
+
+/* 通知模块 */
+.news{
+  background-color: #eeeeee;
+  padding-top: 20rpx;
+}
+.news .icon{
+  width:56rpx;
+  height:52rpx;
+  margin-left: 20rpx;
+}
+.news .arrow{
+  width:18rpx;
+  height:35rpx;
+  margin-left: 256rpx;
+}
+.newsFirst,
+.newsSecond{
+  background-color: #fff;
+}
+.newsFirst{
+  margin-bottom: 20rpx;
+  padding-top: 45rpx;
+}
+.newsFirst .one,
+.newsSecond .two{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:150rpx;
+  border-bottom: 1rpx solid #eeeeee;
+  padding:0 30rpx;
+  box-sizing: border-box;
+}
+.newsSecond>view:last-child{
+  border: 0;
+}
+
+/* 弹出分类按钮 */
+/* 分类弹出模态框样式 */
+.storeup{
+  position: fixed;
+  width: 360rpx;
+  height: 385rpx;
+  background: white;
+  bottom: 450rpx;
+  left: 200rpx;
+  border-top-right-radius: 39rpx;
+  border-top-left-radius: 39rpx;
+  /* border-radius: 41rpx; */
+  z-index: -5;
+  display: none;
+  font-size: 25rpx;
+}
+.storeup-header{
+  border-top-right-radius: 39rpx;
+  border-top-left-radius: 39rpx;
+  width: 100%;
+  height: 91rpx;
+  text-align: center;
+  line-height: 91rpx;
+
+}
+.storeup-footer{
+  border-bottom-right-radius: 39rpx;
+  border-bottom-left-radius: 39rpx;
+  width: 100%;
+  height: 91rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff
+}
+.storeup-footer text{
+  width: 50%;
+  text-align: center;
+  line-height: 91rpx;
+}
+/* .storeup-footer text:first-child{
+  border-right:1px solid #eeeeee;
+} */
+.storeup .noterecord text{
+  display: inline-block;
+  height: 70rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 70rpx;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #fff
+}
+.full-screen{
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgba(8, 8, 8, 0.5);
+  display: none;
+}
+
+/* 加载更多的图标样式 */
+.loadmore {
+  color: #888;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.loadmore.loading::before {
+  content: '';
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: -10rpx;
+  margin-right: 10rpx;
+  display: inline-block;
+  vertical-align: middle;
+  animation: loading 1s steps(12) infinite;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=) no-repeat;
+  background-size: 100%
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(-360deg)
+  }
+}
+

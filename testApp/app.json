@@ -1,0 +1,81 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/login/login",
+    "pages/personal/personal",
+    "pages/index/index",
+    "pages/previous/deservefocus/deservefocus",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/focuse/focuse",
+    "pages/homepage/notes/notes",
+    "pages/details/details",
+    "pages/backbone/backbone",
+    "pages/backbone/child/child",
+    "pages/backbone/searchaccount/searchaccount",
+    "pages/backbone/editprofile/editprofile",
+    "pages/backbone/myfocuse/myfocuse",
+    "pages/backbone/myfuns/myfuns",
+    "pages/backbone/myfunsnone/myfunsnone",
+    "pages/backbone/myfriend/myfriend",
+    "pages/activdetail/activdetail",
+    "pages/activdetail/sign/sign",
+    "pages/activdetail/signsuccess/signsuccess",
+    "pages/search/search",
+    "pages/search/searchResult/searchResult",
+    "pages/homepage/bjfocuse/watchResponse/watchResponse",
+    "pages/homepage/gcfocuse/gcwatchResponse/gcwatchResponse",
+    "pages/homepage/gcfocuse/gcfocuse",
+    "pages/homepage/bjfocuse/bjfocuse",
+    "pages/homepage/mybjdetail/mybjdetail",
+    "pages/focuse/watchResponse/watchResponse",
+    "pages/backbone/myNotesMore/myNotesMore",
+    "pages/backbone/myNotesClassify/myNotesClassify",
+    "pages/news/news",
+    "pages/news/@friend/@friend",
+    "pages/news/chat/chat",
+    "pages/backbone/newclassify/newclassify",
+    "pages/news/personalChat/personalChat",
+    "pages/news/formatNews/formatNews",
+    "pages/news/@/@",
+    "pages/news/serviceNews/serviceNews",
+    "pages/news/likeCollect/likeCollect",
+    "pages/news/receiveComments/receiveComments",
+    "pages/news/addAttention/addAttention",
+    "pages/backbone/childeditprofile/childeditprofile",
+    "pages/backbone/myfocuse/seemore/seemore"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#FFC649",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "assets/tabs/h-t.png",
+        "pagePath": "pages/homepage/homepage",
+        "iconPath": "assets/tabs/h.png",
+        "text": ""
+      },
+      {
+        "selectedIconPath": "assets/tabs/add.png",
+        "pagePath": "pages/homepage/notes/notes",
+        "iconPath": "assets/tabs/add.png",
+        "text": ""
+      },
+      {
+        "selectedIconPath": "assets/tabs/u-t.png",
+        "pagePath": "pages/backbone/backbone",
+        "iconPath": "assets/tabs/u.png",
+        "text": ""
+      }
+    ]
+  }
+}

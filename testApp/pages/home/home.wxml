@@ -1,0 +1,14 @@
+<view class='homes'>
+  <view class='next' bindtap='nextgo'>跳过</view>
+  <view class='title'>请选择四个感兴趣的标签</view>
+  <view class='main'>
+    <view wx:for='{{6}}' wx:for-index='index' class='lists'>
+      <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532347783401&di=c2c3fd754e12d06e93a7e4024a260acc&imgtype=0&src=http%3A%2F%2Fuserimages14.51sole.com%2F20170406%2Fb_3971625_201704061559435214.jpg' bindtap='changen'  mode="aspectFill" data-index='{{index}}'></image>
+      <view class='name'>亲子</view>
+     <view class='floapop {{indexs[index].state?"blocks":""}}' >选中</view>
+    </view>
+  </view>
+  <view class='btn'>
+  <view class='gonext' bindtap='go'>下一步</view>
+  </view>
+</view>

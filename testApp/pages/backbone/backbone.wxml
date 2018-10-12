@@ -1,0 +1,153 @@
+    <view class='header' bindlongtap="actioncnt">
+  <image class='allcontext' src='{{headercontext}}'></image>
+  <view class='correlation-account'>
+    <view class='box' style="opacity:0">
+      <image src='../../image/homepage.png' bindtap="revertsheet"></image>
+      <image src='../../image/contact.png' bindtap='unbound'></image>
+      <image src='../../image/account.png' bindtap='childmanage'></image>
+    </view>
+    <view class='userinfoimg'>
+      <image src='{{oneselfurl}}'></image>
+    </view>
+    <view class='box'>
+    <view>
+    <image src='../../image/tradd.png' class='tradd' bindtap='seenotes' style='width:40rpx;'></image>
+    </view>
+      <view class='scroll'>
+        <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex;width:100%">
+          <image wx:for='{{cerateimg}}' data-index="{{item.is_Independent}}" wx:for-index="index" wx:for-item="item" src='{{item.avatarimage}}' bindtap='boundChild' data-id="{{item.id}}"></image>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+  <view class='related'>
+    <text bindtap="myfocus">{{followcount}}关注</text>
+    <text bindtap="myfuns">{{mycount}}粉丝</text>
+    <text bindtap="myfriend">{{friends}}好友</text>
+  </view>
+  <view class='editor' bindtap='editprofile'>
+    <text>编辑个人资料</text>
+  </view>
+  <view class='perfect'>
+    <image src='../../image/seat.png'></image>
+    <text class='perfect-font'>{{location}}</text>
+  </view>
+  <view class='personal-bewrite perfect'>
+    <text class='perfect-font'>{{personality}}</text>
+  </view>
+</view>
+<view class='backbone-tab'>
+  <text class='{{tabArr.currentId==1?"active":""}}' id='1' data-id='1' bindtap='tab'>笔记</text>
+  <text class='{{tabArr.currentId==2?"active":""}}' id='2' data-id='2' bindtap='tab'>关于我</text>
+  <text class='{{tabArr.currentId==3?"active":""}}' id='3' data-id='3' bindtap='tab'>收藏</text>
+  <text class='{{tabArr.currentId==4?"active":""}}' id='4' data-id='4' bindtap='tab'>活动</text>
+</view>
+<view class='corresponding'>
+  <view class='item {{tabArr.currentBdid==1?"active":""}}'>
+    <view class='notes-header'>
+      <view>
+        <image src='../../image/separate.png'></image>
+        <text>所有笔记</text>
+      </view> 
+      <text bindtap='noteslist'>更多</text> 
+    </view>
+    <view class='notes-smallspace'>
+      <view wx:for="{{meanslistnotes}}" class='notessmall-banner' wx:for-item="item" bindtap='notesdetail' data-id="{{item.id}}">
+        <image src='{{item.coverimages}}' class='notessmall-img'></image>
+        <text class='notessmall-text'>{{item.title}}</text>
+      </view>
+      <text class='notesnone' style='{{notesnone?"display:block":"display:none"}}'>你还没有发布笔记呦!快去点击+号按钮发布一篇自己的笔记吧</text>
+    </view>
+    <view class='notes-header'>
+      <view> 
+        <image src='../../image/separate.png'></image>
+        <text>我的分类</text>
+      </view>
+      <text bindtap='newclassify'>创建新分类</text>
+    </view>
+    <view class='notes-ordering'>
+      <view wx:for="{{notesuserInfo}}" class='notessmall-banner notessmall-shadow' bindtap='editorclass' data-id="{{item.id}}">
+        <image src='{{headercon}}' class='notessmall-img'></image>
+        <text class='notessmall-text notessmall-textcenter'>{{item.album_name}}</text>
+        <text class='notessmall-text'>{{item.album_desc}}</text>
+      </view>
+      <text class='notesnone' style='{{noteclass?"display:block":"display:none"}}'>你还没有创建笔记的分类呦!快去点击右上角的创建新分类创建一个自己的笔记分类吧</text>
+    </view>
+  </view>
+  <view class='item {{tabArr.currentBdid==2?"active":""}}'>
+    <view class='notes-header'>
+      <view>
+        <image src='../../image/separate.png'></image>
+        <text>所有关于我的</text>
+      </view>
+    </view>
+    <view class='allaboutme'>
+      <view class='aboutme-item' bindtap='allmyselfenter'>
+        <image class='aboutme-img' src='{{oneselfurl}}'></image>
+        <text class='notessmall-text'>@我的笔记</text>
+      </view>
+      <view class='aboutme-item' wx:for="{{meanslistnoteser}}" data-id="{{item.id}}" bindtap='childseenotes'>
+        <image src='{{item.avatarimage}}' class='aboutme-img'></image>
+        <text class='notessmall-text'>{{item.nickname}}</text>
+      </view>
+      <text class='notesnone' style='{{notesnone?"display:block":"display:none"}}'>你还没有关联的账号呦!快去创建新账号吧</text>
+    </view>
+    <view class='notes-header'>
+      <view>
+        <image src='../../image/separate.png'></image>
+        <text>我的分类</text>
+      </view>
+      <text bindtap='newclassify'>创建新分类</text>
+    </view>
+   <view class='notes-ordering'>
+      <view wx:for="{{notesuserInfo}}" class='notessmall-banner notessmall-shadow' bindtap='editorclass' data-id="{{item.id}}">
+        <image src='{{headercon}}' class='notessmall-img'></image>
+        <text class='notessmall-text notessmall-textcenter'>{{item.album_name}}</text>
+        <text class='notessmall-text'>{{item.album_desc}}</text>
+      </view>
+      <text class='notesnone' style='{{noteclass?"display:block":"display:none"}}'>你还没有创建笔记的分类呦!快去点击右上角的创建新分类创建一个自己的笔记分类吧</text>
+    </view>
+  </view>
+  <view class='item {{tabArr.currentBdid==3?"active":""}}'>
+    <view class='notes-header'>
+      <view>
+        <image src='../../image/separate.png'></image>
+        <text>我的分类</text>
+      </view>
+      <text bindtap='newclassify'>创建新分类</text>
+    </view>
+        <view class='notes-ordering'>
+      <view wx:for="{{notesuserInfo}}" class='notessmall-banner notessmall-shadow' bindtap='editorclass' data-id="{{item.id}}">
+        <image src='{{headercon}}' class='notessmall-img'></image>
+        <text class='notessmall-text notessmall-textcenter'>{{item.class_name}}</text>
+        <text class='notessmall-text'>{{item.class_desc}}</text>
+      </view>
+      <text class='notesnone' style='{{notesnone?"display:block":"display:none"}}'>你还没有创建收藏的分类呦!快去点击右上角的创建新分类创建一个自己的笔记分类吧</text>
+    </view>
+  </view>
+  <view class='item {{tabArr.currentBdid==4?"active":""}}'>
+    <view class='notes-header'>
+      <view>
+        <image src='../../image/separate.png'></image>
+        <text>我的活动</text>
+      </view>
+    </view>
+    <view>
+      <view wx:for="{{activeclass}}" class='campaign' bindtap='campaign' wx:for-index="index" data-index="{{index}}" data-id="{{item.id}}" data-status="{{item.status}}">
+        <image src='{{item.activity_image}}' data-index="{{index}}"></image>
+        <text>{{item.activity_title}}</text>
+        <view class='activetime'>
+         <text>{{item.start_time}}</text><text>至</text><text>{{item.end_time}}</text>
+        </view>
+      </view>
+      <text class='notesnone' style='{{notesnone?"display:block":"display:none"}}'>你还没有报名活动呦!</text>
+    </view>
+  </view>
+</view>
+
+<view class='seenotes' style='{{seenotes?"z-index:5;display:block;":""}}'>
+  <view class='noterecord' wx:for="{{noterecord}}" wx:for-index="index">
+    <text style='{{choicefriend==index?"color:#ffc64a;":""}} z-index:999;' bindtap='changchoice' data-index='{{index}}'>{{item}}</text>
+  </view>
+</view>
+<view class='full-screen' style='{{seenotes?"z-index:3;display:block;":""}}' bindtap='allover'></view>

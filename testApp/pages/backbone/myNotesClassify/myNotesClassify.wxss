@@ -1,0 +1,160 @@
+/* @import "../../../../components/myNotes/myNotes.wxss"; */
+
+
+.classifyTitle{
+  position: fixed;
+  width:100%;
+  top:0;
+  left: 0;
+  height:150rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #eeeeee;
+  z-index: 9;
+  padding:10rpx 30rpx 0 30rpx;
+}
+.classifyTitle .content{
+  font-size: 25rpx;
+  margin-top: 20rpx;
+}
+.classifyTitle .edit{
+  padding:5rpx 25rpx;
+  border:1rpx solid #fec749;
+  border-radius: 20rpx;
+  position: absolute;
+  top:25%;
+  right:10%;
+  font-size: 30rpx;
+  color:#fec749;
+}
+.mynotes{
+  padding:170rpx 20rpx 90rpx 20rpx;
+  background-color: #eaeaea;
+}
+.modufocuse{
+  background: red;
+  padding: 30rpx 10rpx 50rpx 10rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  margin-bottom: 20rpx; 
+  margin-top: 10rpx;
+  position:relative;
+  font-size:16px;
+  box-shadow: 3rpx 3rpx 6rpx #dfdfdf;
+}
+.modufocuse .shifouxuan{
+  position: absolute;
+  right:30rpx;
+  top:60rpx;
+}
+.xuanzhong{
+  position: absolute;
+  right:30rpx;
+  top:60rpx;
+  display: none;
+  background-color: #fec749;
+  border-radius: 50%;
+  width:60rpx;
+  height:60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color:#fff
+}
+ .pic{
+width: 100rpx;
+height: 100rpx;
+margin: auto;
+border-radius: 100%;
+vertical-align: middle;
+margin-right: 20rpx;
+}
+
+.name{
+ position:absolute;
+ top:50rpx;
+ left:20%;
+ font-size: 30rpx;
+}
+
+.time{
+ position:absolute;
+ top:110rpx;
+ left:20%;
+ color: #d1d1d1;
+ font-size: 30rpx;
+}
+.images{
+  display: flex;
+  justify-content:center;
+}
+ .images image {
+  margin: 20rpx 10rpx;
+  width: 30%;
+  height: 200rpx;
+}
+.bjtitle{
+  margin-left: 10rpx;
+}
+.bjcontent{
+  margin-top: 15rpx;
+  color:#d2d2d2;
+  padding:0 10rpx;
+  box-sizing: border-box;
+  width:100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  font-size: 25rpx;
+}
+.myself{
+  /* width:18%; */
+  /* background-color: pink; */
+  padding:10rpx 10rpx;
+  border: 1rpx solid #fec749;
+  color:#fec749;
+  border-radius: 15rpx;
+  font-size: 25rpx;
+  margin-left: 10rpx
+}
+.control{
+  margin-top: 30rpx;
+  height:30rpx;
+  display: flex;
+  position: relative;
+  justify-content:space-around;
+}
+.control image{
+  width:50rpx;
+  height:50rpx;
+}
+.control text{
+  margin-left: -110rpx;
+}
+
+/*  底部编辑操作列表 */
+.editList{
+  position: fixed;
+  width:100%;
+  height: 80rpx;
+  background-color: #fec749;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  /* display: flex; */
+  justify-content:center;
+  display: none;
+}
+.editList text{
+  display:inline-block;
+  width:33%;
+  font-size: 25rpx;
+  line-height: 80rpx;
+  color:#fff;
+  text-align: center;
+  border-right: 1rpx solid #fff;
+}
+.editList text:last-child{
+  border:0 
+}
+

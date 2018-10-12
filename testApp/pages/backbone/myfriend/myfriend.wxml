@@ -1,0 +1,18 @@
+<view class='search'>
+  <icon type='search' class='searchlog'></icon> 
+  <input value="{{searchValue}}" bindconfirm='oks' bindinput='watchPassWord'placeholder='请输入你要搜索的账号' placeholder-class="place-holder" />
+  <text bindtap='searcher'>搜索</text>
+</view> 
+<view class="bg">
+  <view class="focusAll">
+    <view class='childer' wx:for='{{focusman}}' wx:for-item='item'>
+    <view wx:if="{item.status}">
+    <image src='{{item.avatarimage}}'  mode="aspectFill"></image>
+      <text>{{item.nickname}}</text> 
+      <text class='del {{item.state?"active":""}}' bindtap='delFriend' data-id='{{item.id}}' data-index="{{index}}" data-friendid="{{item.friend_id}}" data-content="{{adelstate}}">{{adelstate}}</text>
+    </view>
+    <view wx:else></view>
+    </view>
+     <image src="../../../assets/img/sad.png" style='{{notesnone?"display:block":"display:none"}}'></image>
+  </view> 
+</view>

@@ -1,0 +1,64 @@
+.bg{
+  background-color: #eeeeee;
+  padding-top:20rpx;
+}
+.focusAll{
+  background-color: #fff;
+  padding:50rpx 35rpx 0 35rpx;
+  font-size: 30rpx;
+}
+
+.childer{
+  height: 126rpx;
+  position: relative;
+}
+.childer{
+  height: 126rpx;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.childer image{
+width: 89rpx;
+height: 89rpx;
+margin: auto;
+border-radius: 100%;
+vertical-align: middle;
+margin-right: 20rpx;
+}
+.childer view{
+  width: 500rpx;
+  display: flex;
+}
+.childer view text{
+  margin-left: 75rpx;
+  font-size:30rpx;
+  width: 300rpx;
+  height: 90rpx;
+  line-height:150rpx;
+}
+.childer>text{
+  width: 20rpx;
+  height: 20rpx;
+}
+.userintro{
+  color:#d2d2d2;
+  position: absolute;
+  bottom:10%;
+  left:15%;
+}
+.childer .check {
+  width: 40rpx;
+  height: 40rpx;
+}
+.confirm{
+  width: 357rpx;
+  height: 105rpx;
+  margin: auto;
+  border-radius: 30rpx;
+  background: #ffc64a;
+  color: white;
+  text-align: center;
+  line-height: 105rpx;
+  margin-top: 300rpx;
+}

@@ -1,0 +1,15 @@
+<view class='all'>
+  <view class='banner'>
+    <view>
+      <text>标题:</text>
+     <input placeholder='请为你的分类添加一个标题' placeholder-class="place-holder" bindinput='setinput' value='{{endinput}}'/>
+    </view>
+    <view class='synopsis'>
+      <text>简介:</text>
+      <textarea  bindinput='tesinput' value='{{textinput}}'></textarea>
+    </view>
+  </view>
+</view>
+ <view class='confirm' bindtap='sendnewclass'>  
+    确定
+  </view>

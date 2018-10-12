@@ -1,0 +1,40 @@
+
+@import "../../../components/private/private.wxss";
+
+.likeCollect{
+  background-color: #eeeeee;
+  padding-top: 20rpx;
+  /* height:100%; */
+}
+.likeCollect swiper{
+  height:1200rpx;
+  background-color: #fff;
+}
+.likeCollect .likeContent{
+  padding-top:20rpx;
+}
+.private{
+ background-color: #fff;
+ padding: 50rpx 35rpx 10rpx 35rpx;
+ font-size: 30rpx;
+}
+.private .swiper-tab-list{
+  padding:10rpx 20rpx;
+  color:#ffc649;
+  border: 1rpx solid #ffc649;
+  border-radius: 25rpx;
+}
+.private .swiper-tab-list.on{
+  color:#d2d2d2;
+  border: 1rpx solid #d2d2d2;
+}
+.private text:last-child{
+  margin-left: 60rpx;
+}
+
+/* .swiper-box{ 
+  display: block; 
+  height: 100%; 
+  width: 100%; 
+  overflow: hidden; 
+}   */

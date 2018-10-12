@@ -1,0 +1,258 @@
+.pencliimg{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: black;
+  height: 280rpx;
+  overflow: hidden;
+}
+.pencliimg image{
+  width: 618rpx;
+  height: 300rpx;
+  margin-top: 184rpx;
+}
+.container{
+  width: 707rpx;
+  margin: auto;
+  border: 1px solid transparent;
+}
+.header{
+  width: 100%;
+  height: 73rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56rpx;
+}
+.header-small{
+  font-size: 25rpx;
+  color: #eaeaea;
+}
+header-moddle{
+  font-size:35rpx;
+}
+.header-title{
+  width: 100%;
+  height: 63rpx;
+  border-bottom: 1px solid #eaeaea;
+}
+.scroll-view{
+  height: 133rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.addtitle{
+  width: 700rpx;
+  height: 60rpx;
+}
+
+.label{
+  height: 49rpx;
+  min-width: 80rpx;
+  background: white;
+  border: 1px solid #ffc64a; 
+  display: inline-block;
+  margin-right: 56rpx;
+  border-radius: 10rpx;
+  margin-top: 42rpx;
+  margin-bottom: 22rpx;
+  text-align: center;
+  line-height: 49rpx;
+  font-size: 22rpx;
+  color: #ffc64a;
+}
+.onlable{
+  margin-left: 0rpx;
+}
+.content{
+  width:100%;
+  height: 500rpx;
+  overflow: hidden;
+}
+.content textarea{
+  width:100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.place-holder {
+  font-size: 25rpx;
+  color: #eaeaea;
+}
+.hongfriend{
+  position: relative;
+  z-index: 1;
+}
+.moneypicgure .hongchild{
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  right: 0rpx;
+  top: 0rpx;
+  z-index: 10;
+}
+.camera-content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.camera{
+  width: 230rpx;
+  height: 230rpx;
+  background: #eeeeee;
+  margin-left: 0rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.camera image{
+  width:100rpx;
+  height: 100rpx;
+}
+.icon-text{
+  width: 100%; 
+}
+.icon-text view{
+  display: flex;
+  height: 73rpx;
+  align-items: center;
+}
+.icon-text image{
+  width: 25rpx;
+  height: 25rpx;
+  margin-right: 30rpx;
+}
+.aimyfriend{
+  width: 130rpx;
+}
+.icon-text view>text{
+  font-size: 25rpx;
+  margin-right: 70rpx;
+  width: 150rpx;
+  height: 40rpx;
+}
+.icon-text .yichu{
+  color: orange;
+  width: 50rpx;
+  height: 40rpx;
+  overflow: hidden;
+}
+.icon-text view>.gengai{
+  width: 500rpx;
+}
+.icon-text .aimyfriend{
+  width: 300rpx;
+}
+.release-content{
+  width: 100%;
+}
+.release{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 364rpx;
+  height: 95rpx;
+  background: #ffc64a;
+  margin-top: 56rpx;
+  border-radius: 20rpx;
+  line-height: 95rxp;
+  color: white;
+  margin-bottom: 50rpx;
+}
+/* .place-holder {
+    font-size: 12px;
+} */
+.moneypicgure{
+  display: flex;
+  flex-wrap: wrap;
+}
+.moneypicgure view{
+  width: 233rpx;
+  height: 233rpx;
+  /* overflow: hidden; */
+}
+.moneypicgure image{
+  width: 233rpx;
+  height: 233rpx;
+}
+
+
+
+.seenotes{
+  position: fixed;
+  width: 360rpx;
+  height: 385rpx;
+  background: white;
+  bottom: 540rpx;
+  left: 189rpx;
+  border-radius: 41rpx;
+  z-index: 999;
+  display: none;
+  font-size: 25rpx;
+}
+.seenotes-header{
+  border-top-right-radius: 39rpx;
+  border-top-left-radius: 39rpx;
+  width: 100%;
+  height: 91rpx;
+  text-align: center;
+  line-height: 91rpx;
+
+}
+.seenotes-footer{
+  border-bottom-right-radius: 39rpx;
+  border-bottom-left-radius: 39rpx;
+  width: 100%;
+  height: 91rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.seenotes-footer text{
+  width: 50%;
+  text-align: center;
+  line-height: 91rpx;
+}
+/* .seenotes-footer text:first-child{
+  border-right:1px solid #eeeeee;
+} */
+.seenotes .noterecord text{
+  display: inline-block;
+  height: 70rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 70rpx;
+  border-bottom: 1px solid #eeeeee;
+}
+.full-screen{
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgba(8, 8, 8, 0.5);
+  display: none;
+  z-index: 3;
+}
+
+
+.prompt-wicket{
+  width: 378rpx;
+  height: 175rpx;
+  background: #ffc649;
+  color: #ffffff;
+  border-radius: 20rpx;
+  position: fixed;
+  top: 150rpx;
+  left: 180rpx;
+  font-size: 30rpx;
+  line-height: 175rpx;
+  text-align: center;
+}
+.active{
+  display: block;
+}
+.cancel {
+  display: none;
+}

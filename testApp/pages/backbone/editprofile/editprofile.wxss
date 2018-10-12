@@ -1,0 +1,76 @@
+.banner{
+  width: 100%;
+  height: 16rpx;
+  background: #eee;
+}
+.content{
+  margin-top: 16rpx;
+  width: 707rpx;
+  margin: auto; 
+}
+.petname{
+  margin-top: 50rpx;
+}
+.content view{
+  display: flex;
+  height: 87rpx;
+  width: 100%;
+  line-height: 87rpx;
+  align-items: center;
+}
+.content .wire{
+  border-bottom: 1px solid #eeeeee;
+}
+.content view text{
+  width: 200rpx;
+ max-width: 400rpx;
+ height: 87rpx;
+}
+.content view .interest{
+  width: 250rpx;
+}
+.content view .obode{
+  width: 150rpx;
+}
+.birthday{
+  color: black !important;
+  height: 84rpx;
+  line-height: 94rpx;
+  position: relative;
+}
+.tui-picker-detail{
+  position: absolute;
+  top: 0rpx;
+  right: -145rpx;
+}
+.label-box{
+  display: flex;
+  flex-wrap: wrap;
+  width:600rpx;
+  height: 200rpx;
+  margin: auto;
+}
+.label{
+  min-width: 91rpx;
+  height: 49rpx;
+  background: white;
+  border: 1px solid #ffc64a; 
+  margin-right: 56rpx;
+  border-radius: 10rpx;
+  margin-top: 42rpx;
+  margin-bottom: 22rpx;
+  text-align: center;
+  line-height: 49rpx;
+  font-size: 22rpx;
+  color: #ffc64a;
+}
+.keep{
+  margin:175rpx auto;
+  width: 357rpx;
+  height: 105rpx;
+  border-radius: 40rpx;
+  background:  #ffc64a;
+  color: white;
+  text-align: center;
+  line-height: 105rpx;
+}
